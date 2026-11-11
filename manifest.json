@@ -1,10 +1,10 @@
 {
-  "name": "Ski Check",
-  "short_name": "Ski Check",
+  "name": "Rafal's Lines",
+  "short_name": "Rafal's Lines",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0f1b2d",
-  "theme_color": "#0f1b2d",
+  "background_color": "#0a1426",
+  "theme_color": "#0a1426",
   "icons": [
     { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
