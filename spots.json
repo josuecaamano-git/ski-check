@@ -1,0 +1,8 @@
+[
+  { "id": "leysin",     "name": "Leysin",              "lat": 46.352, "lon": 7.012, "top": 2205, "fallbackRegion": "CH-1113" },
+  { "id": "villars",    "name": "Villars-Gryon",       "lat": 46.322, "lon": 7.075, "top": 2120, "fallbackRegion": "CH-1114" },
+  { "id": "diablerets", "name": "Les Diablerets",      "lat": 46.365, "lon": 7.160, "top": 2120, "fallbackRegion": "CH-1111" },
+  { "id": "glacier3000","name": "Glacier 3000",        "lat": 46.325, "lon": 7.205, "top": 2971, "fallbackRegion": "CH-1114" },
+  { "id": "mosses",     "name": "Les Mosses",          "lat": 46.395, "lon": 7.100, "top": 1870, "fallbackRegion": "CH-1111" },
+  { "id": "champery",   "name": "Champéry / Les Crosets", "lat": 46.170, "lon": 6.830, "top": 2277, "fallbackRegion": "CH-1312" }
+]

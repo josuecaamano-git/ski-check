@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ski Check</title>
+<meta name="theme-color" content="#0f1b2d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ski Check">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="manifest" href="manifest.json">
+<style>
+  :root {
+    --bg: #0f1b2d; --panel: #17263d; --panel2: #1e3150; --line: #2c4366;
+    --text: #eef3fa; --muted: #9db0c9; --accent: #7cc4ff;
+    --d1: #ccff66; --d2: #ffff00; --d3: #ff9900; --d4: #ff0000; --d5: #8b0000;
+    --radius: 16px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 16px; }
+  header h1 { font-size: 26px; margin: 8px 0 2px; letter-spacing: -0.5px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  .notice { background: var(--panel2); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 12px 14px; margin: 14px 0; font-size: 14px; color: var(--muted); }
+  .notice strong { color: var(--text); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 14px; margin: 12px 0; cursor: pointer; display: block; width: 100%; text-align: left;
+    color: inherit; font: inherit; }
+  .card:active { transform: scale(0.99); }
+  .row { display: flex; align-items: center; gap: 12px; }
+  .grow { flex: 1; min-width: 0; }
+  .name { font-weight: 650; font-size: 18px; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .chip { display: inline-flex; align-items: center; justify-content: center; min-width: 46px; height: 46px;
+    border-radius: 12px; font-weight: 800; font-size: 20px; color: #111; padding: 0 8px; }
+  .chip.small { min-width: 30px; height: 26px; font-size: 14px; border-radius: 8px; }
+  .l0 { background: #55657d; color: #fff; } .l1 { background: var(--d1); } .l2 { background: var(--d2); }
+  .l3 { background: var(--d3); } .l4 { background: var(--d4); color: #fff; }
+  .l5 { background: repeating-linear-gradient(45deg, var(--d4) 0 6px, #111 6px 12px); color: #fff; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+  .stat { background: var(--panel2); border-radius: 10px; padding: 8px; }
+  .stat b { display: block; font-size: 17px; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .pill { background: var(--panel2); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-size: 13px; }
+  .back { background: none; border: 0; color: var(--accent); font: inherit; padding: 8px 0; cursor: pointer; }
+  h2 { font-size: 20px; margin: 22px 0 8px; }
+  h3 { font-size: 15px; margin: 0 0 6px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; margin: 12px 0; }
+  .compass-wrap { display: flex; justify-content: center; margin: 4px 0 8px; }
+  svg.compass { width: 240px; height: 240px; touch-action: manipulation; }
+  svg.compass path { cursor: pointer; stroke: var(--bg); stroke-width: 2; }
+  svg.compass text { fill: var(--text); font-size: 13px; font-weight: 700; pointer-events: none; }
+  .slider { width: 100%; accent-color: var(--accent); }
+  .elev { display: flex; justify-content: space-between; align-items: baseline; }
+  .elev b { font-size: 22px; }
+  .result { border-radius: 12px; padding: 12px 14px; margin-top: 12px; border: 2px solid var(--line); }
+  .result.hot { border-color: var(--d3); background: rgba(255,153,0,.12); }
+  .result.calm { background: var(--panel2); }
+  .result p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+  .result .big { font-size: 17px; font-weight: 650; color: var(--text); margin: 0; }
+  .problem { border-top: 1px solid var(--line); padding: 12px 0; display: flex; gap: 12px; }
+  .problem:first-of-type { border-top: 0; }
+  .problem svg { flex: none; width: 64px; height: 64px; }
+  .problem p { margin: 4px 0 0; font-size: 14px; color: var(--muted); white-space: pre-line; }
+  .txt { white-space: pre-line; font-size: 15px; }
+  a { color: var(--accent); }
+  .btn { display: block; text-align: center; background: var(--accent); color: #06233f; font-weight: 700;
+    border-radius: 12px; padding: 12px; text-decoration: none; margin: 16px 0 8px; }
+  footer { color: var(--muted); font-size: 12px; padding: 20px 0 30px; text-align: center; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>⛷️ Ski Check</h1>
+    <p id="updated">Loading…</p>
+  </header>
+
+  <main id="list"></main>
+
+  <section id="detail" class="hidden"></section>
+
+  <footer>
+    Data: <a href="https://www.slf.ch" target="_blank" rel="noopener">WSL Institute for Snow and Avalanche Research SLF</a> (CC BY 4.0).<br>
+    This app is a quick overview, not a replacement for the official bulletin or your own judgement.
+  </footer>
+</div>
+
+<script>
+const BULLETIN_LINK = "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/";
+const LEVEL_NAME = ["No rating", "Low", "Moderate", "Considerable", "High", "Very high"];
+const PROBLEM_NAME = {
+  new_snow: "New snow", wind_slab: "Wind slab", persistent_weak_layers: "Persistent weak layers",
+  wet_snow: "Wet snow", gliding_snow: "Gliding snow", favourable_situation: "Favourable situation",
+  no_distinct_avalanche_problem: "No distinct problem", cornices: "Cornices"
+};
+const PERIOD_NAME = { all_day: "", earlier: "morning", later: "afternoon" };
+const ASPECTS = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+const TREELINE_M = 2000;
+
+let DATA = null;
+const state = { spot: null, aspect: "N", elevation: 2000 };
+
+const $ = (sel) => document.querySelector(sel);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtTime = (iso, opts) => iso ? new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Zurich", ...opts }).format(new Date(iso)) : "–";
+const when = (iso) => fmtTime(iso, { weekday: "short", hour: "2-digit", minute: "2-digit" });
+const num = (v, unit, digits = 0) => (v === null || v === undefined) ? "–" : `${Number(v).toFixed(digits)}${unit}`;
+const kmh = (ms) => (ms === null || ms === undefined) ? null : ms * 3.6;
+const compassName = (deg) => deg === null || deg === undefined ? "" : ASPECTS[Math.round(((deg % 360) / 45)) % 8];
+const sub = (s) => ({ plus: "+", minus: "−", neutral: "=" }[s] || "");
+const bound = (b) => b === "treeline" ? TREELINE_M : b;
+
+function inElevation(lower, upper, e) {
+  const lo = bound(lower), hi = bound(upper);
+  if (lo !== null && lo !== undefined && e < lo) return false;
+  if (hi !== null && hi !== undefined && e >= hi) return false;
+  return true;
+}
+function elevLabel(lower, upper) {
+  const f = (b) => b === "treeline" ? "the treeline" : `${b} m`;
+  if (lower != null && upper != null) return `${f(lower)}–${f(upper)}`;
+  if (lower != null) return `above ${f(lower)}`;
+  if (upper != null) return `below ${f(upper)}`;
+  return "all elevations";
+}
+function maxRating(ratings) {
+  return ratings.reduce((m, r) => (!m || r.level > m.level || (r.level === m.level && r.subdivision === "plus")) ? r : m, null);
+}
+function chip(r, small) {
+  const lvl = r ? r.level : 0;
+  const label = r && lvl ? `${lvl}${sub(r.subdivision)}` : "–";
+  return `<span class="chip ${small ? "small" : ""} l${lvl}" title="${LEVEL_NAME[lvl]}">${label}</span>`;
+}
+
+// ---------- list view ----------
+function renderList() {
+  const list = $("#list");
+  let html = "";
+  if (!DATA.bulletinAvailable) {
+    html += `<div class="notice"><strong>No avalanche bulletin right now.</strong> SLF publishes the daily bulletin once the winter season starts. Snow and wind readings below are still live.</div>`;
+  }
+  for (const s of DATA.spots) {
+    const b = s.bulletin, st = s.station;
+    const top = b ? maxRating(b.dangerRatings) : null;
+    const ratingLine = b && b.dangerRatings.length
+      ? b.dangerRatings.map(r => `${r.level}${sub(r.subdivision)} ${elevLabel(r.lower, r.upper)}${PERIOD_NAME[r.period] ? " (" + PERIOD_NAME[r.period] + ")" : ""}`).join(" · ")
+      : "No danger rating";
+    const problems = b ? [...new Set(b.problems.map(p => PROBLEM_NAME[p.type] || p.type))] : [];
+    html += `
+      <button class="card" data-id="${s.id}">
+        <div class="row">
+          ${chip(top)}
+          <div class="grow">
+            <div class="name">${esc(s.name)}</div>
+            <div class="sub">${esc(ratingLine)}</div>
+          </div>
+        </div>
+        ${problems.length ? `<div class="pills">${problems.map(p => `<span class="pill">${esc(p)}</span>`).join("")}</div>` : ""}
+        <div class="stats">
+          <div class="stat"><b>${num(st?.newSnow24, " cm")}</b><span>new snow 24 h</span></div>
+          <div class="stat"><b>${num(kmh(st?.windMean), "")}<small>${st?.windMean != null ? " km/h " + compassName(st.windDir) : ""}</small></b><span>wind now</span></div>
+          <div class="stat"><b>${num(st?.airTemp, "°", 0)}</b><span>${st ? "at " + st.elevation + " m" : "temperature"}</span></div>
+        </div>
+      </button>`;
+  }
+  list.innerHTML = html;
+  list.querySelectorAll(".card").forEach(c => c.addEventListener("click", () => openSpot(c.dataset.id)));
+}
+
+// ---------- detail view ----------
+function openSpot(id) {
+  state.spot = DATA.spots.find(s => s.id === id);
+  state.elevation = Math.round(Math.max(1200, (state.spot.top || 2200) - 200) / 50) * 50;
+  location.hash = id;
+  $("#list").classList.add("hidden");
+  $("#detail").classList.remove("hidden");
+  renderDetail();
+  window.scrollTo(0, 0);
+}
+function closeSpot() {
+  state.spot = null;
+  history.replaceState(null, "", location.pathname);
+  $("#detail").classList.add("hidden");
+  $("#list").classList.remove("hidden");
+}
+
+function compassSVG({ active = [], selected = null, size = 240, labels = true, interactive = false }) {
+  const c = size / 2, r = c - 4, ri = labels ? c * 0.32 : c * 0.25;
+  let out = `<svg class="${interactive ? "compass" : ""}" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}">`;
+  ASPECTS.forEach((a, i) => {
+    const a0 = (i * 45 - 22.5 - 90) * Math.PI / 180, a1 = (i * 45 + 22.5 - 90) * Math.PI / 180;
+    const p = (ang, rad) => `${c + rad * Math.cos(ang)},${c + rad * Math.sin(ang)}`;
+    const d = `M${p(a0, ri)} L${p(a0, r)} A${r},${r} 0 0 1 ${p(a1, r)} L${p(a1, ri)} A${ri},${ri} 0 0 0 ${p(a0, ri)} Z`;
+    let fill = active.includes(a) ? "var(--d3)" : "var(--panel2)";
+    if (selected === a) fill = active.includes(a) ? "#ff6a00" : "var(--accent)";
+    out += `<path d="${d}" fill="${fill}" ${interactive ? `data-aspect="${a}"` : ""}/>`;
+    if (labels) {
+      const mid = (i * 45 - 90) * Math.PI / 180, lr = (r + ri) / 2;
+      out += `<text x="${c + lr * Math.cos(mid)}" y="${c + lr * Math.sin(mid) + 5}" text-anchor="middle">${a}</text>`;
+    }
+  });
+  return out + `</svg>`;
+}
+
+function slopeResult(b) {
+  if (!b) return `<div class="result calm"><p class="big">No bulletin available right now.</p></div>`;
+  const e = state.elevation, a = state.aspect;
+  const ratings = b.dangerRatings.filter(r => inElevation(r.lower, r.upper, e));
+  const hits = b.problems.filter(p => (p.aspects.length === 0 || p.aspects.includes(a)) && inElevation(p.lower, p.upper, e)
+    && !["favourable_situation", "no_distinct_avalanche_problem"].includes(p.type));
+  const ratingTxt = ratings.length
+    ? ratings.map(r => `${chip(r, true)} ${LEVEL_NAME[r.level]}${PERIOD_NAME[r.period] ? " (" + PERIOD_NAME[r.period] + ")" : ""}`).join("&nbsp; ")
+    : "no rating for this elevation";
+  if (hits.length) {
+    const names = hits.map(p => (PROBLEM_NAME[p.type] || p.type) + (PERIOD_NAME[p.period] ? ` (${PERIOD_NAME[p.period]})` : "")).join(", ");
+    return `<div class="result hot">
+      <p class="big">⚠️ This slope is in a core zone for: ${esc(names)}</p>
+      <p>Danger level here: ${ratingTxt}</p>
+      <p>The bulletin says this direction and altitude is where this problem is most likely. Read the description below.</p>
+    </div>`;
+  }
+  return `<div class="result calm">
+    <p class="big">Not in a core zone of today's bulletin</p>
+    <p>Danger level here: ${ratingTxt}</p>
+    <p>Core zones are where danger is most concentrated. Avalanches are still possible elsewhere.</p>
+  </div>`;
+}
+
+function renderDetail() {
+  const s = state.spot, b = s.bulletin, st = s.station;
+  const el = $("#detail");
+  el.innerHTML = `
+    <button class="back" id="back">‹ All spots</button>
+    <h2 style="margin-top:4px">${esc(s.name)}</h2>
+    ${b ? `<div class="sub">Bulletin valid until ${when(b.validTo)}${b.nextUpdate ? " · next update " + when(b.nextUpdate) : ""}</div>` : ""}
+    ${b?.highlights ? `<div class="panel"><div class="txt"><b>${esc(b.highlights)}</b></div></div>` : ""}
+
+    <div class="panel">
+      <h3>Check my slope</h3>
+      <div class="sub" style="margin-bottom:6px">Tap the direction the slope faces, then set its altitude.</div>
+      <div class="compass-wrap" id="compass"></div>
+      <div class="elev"><span class="sub">Altitude</span><b id="elevVal">${state.elevation} m</b></div>
+      <input class="slider" id="elev" type="range" min="1000" max="3600" step="50" value="${state.elevation}">
+      <div id="result"></div>
+    </div>
+
+    ${b && b.problems.length ? `<div class="panel"><h3>Avalanche problems</h3>
+      ${b.problems.map(p => `<div class="problem">
+        ${compassSVG({ active: p.aspects.length ? p.aspects : ASPECTS, size: 64, labels: false })}
+        <div><b>${esc(PROBLEM_NAME[p.type] || p.type)}</b>${PERIOD_NAME[p.period] ? ` <span class="sub">(${PERIOD_NAME[p.period]})</span>` : ""}
+          <div class="sub">${esc(elevLabel(p.lower, p.upper))} · ${p.aspects.length ? p.aspects.join(", ") : "all directions"}</div>
+          ${p.comment ? `<p>${esc(p.comment)}</p>` : ""}</div>
+      </div>`).join("")}</div>` : ""}
+
+    ${b?.snowpack || b?.tendency ? `<div class="panel">
+      ${b.snowpack ? `<h3>Snowpack</h3><div class="txt">${esc(b.snowpack)}</div>` : ""}
+      ${b.tendency ? `<h3 style="margin-top:12px">Tendency</h3><div class="txt">${esc(b.tendency)}</div>` : ""}
+    </div>` : ""}
+
+    <div class="panel">
+      <h3>Nearest weather station</h3>
+      ${st ? `<div class="sub">${esc(st.name)} · ${st.elevation} m · ${st.distanceKm} km away · measured ${when(st.measuredAt)}</div>
+      <div class="stats">
+        <div class="stat"><b>${num(st.snowDepth, " cm")}</b><span>snow depth</span></div>
+        <div class="stat"><b>${num(st.newSnow24, " cm")}</b><span>new snow 24 h</span></div>
+        <div class="stat"><b>${st.depthChange72 == null ? "–" : (st.depthChange72 > 0 ? "+" : "") + num(st.depthChange72, " cm")}</b><span>depth change 72 h</span></div>
+        <div class="stat"><b>${num(kmh(st.windMean), "")}<small> km/h</small></b><span>wind ${compassName(st.windDir)}</span></div>
+        <div class="stat"><b>${num(kmh(st.windGustMax24), "")}<small> km/h</small></b><span>max gust 24 h</span></div>
+        <div class="stat"><b>${num(st.airTemp, "°C", 1)}</b><span>air temp</span></div>
+      </div>` : `<div class="sub">No station within 30 km has data right now.</div>`}
+    </div>
+
+    <a class="btn" href="${BULLETIN_LINK}" target="_blank" rel="noopener">Open the official SLF bulletin ↗</a>
+  `;
+  $("#back").addEventListener("click", closeSpot);
+  $("#elev").addEventListener("input", (ev) => {
+    state.elevation = Number(ev.target.value);
+    $("#elevVal").textContent = state.elevation + " m";
+    updateSlope();
+  });
+  updateSlope();
+}
+
+function updateSlope() {
+  const b = state.spot.bulletin;
+  const e = state.elevation;
+  const active = b ? [...new Set(b.problems
+    .filter(p => inElevation(p.lower, p.upper, e) && !["favourable_situation", "no_distinct_avalanche_problem"].includes(p.type))
+    .flatMap(p => p.aspects.length ? p.aspects : ASPECTS))] : [];
+  $("#compass").innerHTML = compassSVG({ active, selected: state.aspect, interactive: true });
+  $("#compass").querySelectorAll("path[data-aspect]").forEach(p =>
+    p.addEventListener("click", () => { state.aspect = p.dataset.aspect; updateSlope(); }));
+  $("#result").innerHTML = slopeResult(b);
+}
+
+// ---------- start ----------
+async function load() {
+  try {
+    const res = await fetch("data/latest.json?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+    DATA = await res.json();
+  } catch (e) {
+    $("#updated").textContent = "Couldn't load the data. Pull to refresh in a moment.";
+    return;
+  }
+  $("#updated").textContent = `Updated ${when(DATA.generatedAt)} · tap a spot for the slope check`;
+  renderList();
+  const id = location.hash.slice(1);
+  if (id && DATA.spots.some(s => s.id === id)) openSpot(id);
+}
+window.addEventListener("hashchange", () => { if (!location.hash && state.spot) closeSpot(); });
+load();
+</script>
+</body>
+</html>
