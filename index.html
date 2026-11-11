@@ -74,6 +74,13 @@
     border-radius: 12px; padding: 12px; text-decoration: none; margin: 16px 0 8px; }
   footer { color: var(--muted); font-size: 12px; padding: 20px 0 30px; text-align: center; }
   .hidden { display: none; }
+  .hint { color: var(--muted); font-size: 13px; margin: 10px 2px 0; }
+  .card { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+    transition: box-shadow .15s; position: relative; }
+  body.reordering .card .pills, body.reordering .card .stats { display: none; }
+  body.reordering .card { margin: 8px 0; }
+  .card.dragging { z-index: 10; box-shadow: 0 12px 30px rgba(0,0,0,.5); border-color: var(--accent);
+    transition: none; }
 </style>
 </head>
 <body>
@@ -147,7 +154,8 @@ function renderList() {
   if (!DATA.bulletinAvailable) {
     html += `<div class="notice"><strong>No avalanche bulletin right now.</strong> SLF publishes the daily bulletin once the winter season starts. Snow and wind readings below are still live.</div>`;
   }
-  for (const s of DATA.spots) {
+  html += `<div class="hint">Tip: tap and hold a spot to move it up or down.</div>`;
+  for (const s of orderedSpots()) {
     const b = s.bulletin, st = s.station;
     const top = b ? maxRating(b.dangerRatings) : null;
     const ratingLine = b && b.dangerRatings.length
@@ -172,7 +180,127 @@ function renderList() {
       </button>`;
   }
   list.innerHTML = html;
-  list.querySelectorAll(".card").forEach(c => c.addEventListener("click", () => openSpot(c.dataset.id)));
+  list.querySelectorAll(".card").forEach(c => {
+    c.addEventListener("click", (ev) => {
+      if (drag.justDropped) { ev.preventDefault(); return; }
+      openSpot(c.dataset.id);
+    });
+    c.addEventListener("contextmenu", (ev) => ev.preventDefault());
+    c.addEventListener("touchstart", onPressStart, { passive: true });
+    c.addEventListener("mousedown", onPressStart);
+  });
+}
+
+// ---------- saved order (kept on this phone) ----------
+const ORDER_KEY = "skicheck-order";
+function loadOrder() {
+  try { return JSON.parse(localStorage.getItem(ORDER_KEY)) || []; } catch { return []; }
+}
+function saveOrder(ids) {
+  try { localStorage.setItem(ORDER_KEY, JSON.stringify(ids)); } catch {}
+}
+function orderedSpots() {
+  const order = loadOrder();
+  const rank = (id) => { const i = order.indexOf(id); return i === -1 ? 1000 : i; };
+  return DATA.spots.map((s, i) => ({ s, i })).sort((a, b) => rank(a.s.id) - rank(b.s.id) || a.i - b.i).map(x => x.s);
+}
+
+// ---------- tap-and-hold to reorder ----------
+const HOLD_MS = 400, MOVE_TOLERANCE = 10;
+const drag = { timer: null, card: null, active: false, startX: 0, startY: 0, y: 0, grabOffset: 0, justDropped: false, raf: null };
+const pointY = (ev) => (ev.touches ? ev.touches[0] : ev).clientY;
+const pointX = (ev) => (ev.touches ? ev.touches[0] : ev).clientX;
+
+function onPressStart(ev) {
+  if (ev.type === "mousedown" && ev.button !== 0) return;
+  drag.card = ev.currentTarget;
+  drag.startX = pointX(ev); drag.startY = drag.y = pointY(ev);
+  clearTimeout(drag.timer);
+  drag.timer = setTimeout(startDrag, HOLD_MS);
+  const move = ev.type === "touchstart" ? "touchmove" : "mousemove";
+  const end = ev.type === "touchstart" ? "touchend" : "mouseup";
+  document.addEventListener(move, onPressMove, { passive: false });
+  document.addEventListener(end, onPressEnd, { once: true });
+  if (ev.type === "touchstart") document.addEventListener("touchcancel", onPressEnd, { once: true });
+  drag.cleanup = () => document.removeEventListener(move, onPressMove);
+}
+
+function startDrag() {
+  const card = drag.card;
+  if (!card) return;
+  drag.active = true;
+  if (navigator.vibrate) { try { navigator.vibrate(25); } catch {} }
+  document.body.classList.add("reordering");     // cards shrink so all fit on screen
+  card.classList.add("dragging");
+  const r = card.getBoundingClientRect();
+  window.scrollBy(0, r.top + r.height / 2 - drag.y); // keep the card under the finger
+  const r2 = card.getBoundingClientRect();
+  drag.grabOffset = drag.y - r2.top;
+  autoScroll();
+}
+
+function onPressMove(ev) {
+  drag.y = pointY(ev);
+  if (!drag.active) {
+    if (Math.abs(drag.y - drag.startY) > MOVE_TOLERANCE || Math.abs(pointX(ev) - drag.startX) > MOVE_TOLERANCE) {
+      clearTimeout(drag.timer); // the finger moved: it's a scroll, not a hold
+    }
+    return;
+  }
+  ev.preventDefault(); // stop the page scrolling while dragging
+  positionDragged();
+}
+
+function positionDragged() {
+  const card = drag.card;
+  const cards = [...document.querySelectorAll("#list .card")];
+  // where the card would sit without the drag offset
+  const current = parseFloat(card.dataset.dy || "0");
+  const naturalTop = card.getBoundingClientRect().top - current;
+  // move it in the list when the finger passes a neighbour's middle
+  const fingerMid = drag.y - drag.grabOffset + card.offsetHeight / 2;
+  for (const other of cards) {
+    if (other === card) continue;
+    const r = other.getBoundingClientRect();
+    const mid = r.top + r.height / 2;
+    const otherIsAbove = cards.indexOf(other) < cards.indexOf(card);
+    if (otherIsAbove && fingerMid < mid) { other.before(card); break; }
+    if (!otherIsAbove && fingerMid > mid) { other.after(card); break; }
+  }
+  const newNaturalTop = card.getBoundingClientRect().top - current;
+  const dy = drag.y - drag.grabOffset - newNaturalTop;
+  card.dataset.dy = dy;
+  card.style.transform = `translateY(${dy}px) scale(1.03)`;
+  void naturalTop;
+}
+
+function autoScroll() {
+  if (!drag.active) return;
+  const edge = 70;
+  let step = 0;
+  if (drag.y < edge) step = -8;
+  else if (drag.y > window.innerHeight - edge) step = 8;
+  if (step) { window.scrollBy(0, step); positionDragged(); }
+  drag.raf = requestAnimationFrame(autoScroll);
+}
+
+function onPressEnd() {
+  clearTimeout(drag.timer);
+  drag.cleanup?.();
+  cancelAnimationFrame(drag.raf);
+  const card = drag.card;
+  if (drag.active && card) {
+    card.classList.remove("dragging");
+    card.style.transform = "";
+    delete card.dataset.dy;
+    document.body.classList.remove("reordering");
+    saveOrder([...document.querySelectorAll("#list .card")].map(c => c.dataset.id));
+    drag.justDropped = true;
+    setTimeout(() => { drag.justDropped = false; }, 350);
+    card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+  drag.active = false;
+  drag.card = null;
 }
 
 // ---------- detail view ----------
