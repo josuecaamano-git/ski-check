@@ -1,4 +1,4 @@
-# Rafal's Lines
+# Rafał's Lines
 
 A small phone web app showing the SLF avalanche bulletin and live snow/wind readings for ski areas near Lausanne, with a quick "is my slope in a core zone?" check.
 
