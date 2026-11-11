@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-11T19:34:26.462Z",
+ "generatedAt": "2026-11-11T19:35:38.847Z",
  "bulletinAvailable": true,
  "source": "WSL Institute for Snow and Avalanche Research SLF (CC BY 4.0) — www.slf.ch",
  "errors": [],
@@ -16,6 +16,7 @@
     "elevation": 1780,
     "distanceKm": 5.6,
     "measuredAt": "2026-11-11T19:30:00Z",
+    "historyHours": 24,
     "snowDepth": 0,
     "newSnow24": 0,
     "depthChange24": 0,
@@ -83,6 +84,7 @@
     "elevation": 1780,
     "distanceKm": 0.4,
     "measuredAt": "2026-11-11T19:30:00Z",
+    "historyHours": 24,
     "snowDepth": 0,
     "newSnow24": 0,
     "depthChange24": 0,
@@ -104,7 +106,7 @@
    "name": "Les Diablerets",
    "top": 2120,
    "region": {
-    "name": "Calanda",
+    "name": null,
     "matchedBy": "map"
    },
    "bulletin": {
@@ -150,6 +152,7 @@
     "elevation": 2218,
     "distanceKm": 1.4,
     "measuredAt": "2026-11-11T19:30:00Z",
+    "historyHours": 24,
     "snowDepth": 0,
     "newSnow24": 0,
     "depthChange24": 0,
@@ -217,6 +220,7 @@
     "elevation": 2569,
     "distanceKm": 3,
     "measuredAt": "2026-11-11T19:30:00Z",
+    "historyHours": 24,
     "snowDepth": 17,
     "newSnow24": 0,
     "depthChange24": 1,
@@ -245,6 +249,7 @@
     "elevation": 2218,
     "distanceKm": 5.3,
     "measuredAt": "2026-11-11T19:30:00Z",
+    "historyHours": 24,
     "snowDepth": 0,
     "newSnow24": 0,
     "depthChange24": 0,
@@ -312,6 +317,7 @@
     "elevation": 2022,
     "distanceKm": 2.4,
     "measuredAt": "2026-11-11T19:00:00Z",
+    "historyHours": 23,
     "snowDepth": 0,
     "newSnow24": 0,
     "depthChange24": 0,
