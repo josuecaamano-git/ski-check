@@ -152,7 +152,7 @@ function renderList() {
     const top = b ? maxRating(b.dangerRatings) : null;
     const ratingLine = b && b.dangerRatings.length
       ? b.dangerRatings.map(r => `${r.level}${sub(r.subdivision)} ${elevLabel(r.lower, r.upper)}${PERIOD_NAME[r.period] ? " (" + PERIOD_NAME[r.period] + ")" : ""}`).join(" · ")
-      : "No danger rating";
+      : (b ? "No danger rating" : "Not in today's bulletin, often because there isn't enough snow yet");
     const problems = b ? [...new Set(b.problems.map(p => PROBLEM_NAME[p.type] || p.type))] : [];
     html += `
       <button class="card" data-id="${s.id}">

@@ -136,8 +136,8 @@ function findBulletin(spot, features) {
 
 function regionName(feature, spot) {
   const regions = feature?.properties?.regions ?? [];
-  const exact = regions.find((r) => r.regionID === spot.fallbackRegion);
-  return (exact ?? regions[0])?.name ?? null;
+  // A bulletin often covers many regions, so only name one we know is ours.
+  return regions.find((r) => r.regionID === spot.fallbackRegion)?.name ?? null;
 }
 
 // ---------- stations ----------
@@ -175,6 +175,7 @@ function summariseMeasurements(rows, daily) {
   const hs24 = hsAt(24), hs72 = hsAt(72);
   return {
     measuredAt: last.measure_date,
+    historyHours: Math.round((t - new Date(sorted[0].measure_date).getTime()) / 3600e3),
     snowDepth: round(hs),
     newSnow24: round(daily?.HN_1D ?? null),
     depthChange24: hs !== null && hs24 !== null ? round(hs - hs24) : null,
