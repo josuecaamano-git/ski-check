@@ -84,6 +84,14 @@
     border-radius: 12px; padding: 12px; text-decoration: none; margin: 16px 0 8px; }
   footer { color: var(--muted); font-size: 12px; padding: 20px 0 30px; text-align: center; }
   .hidden { display: none; }
+  .danger-word { font-size: 14px; color: #dbe6f5; margin: 1px 0 1px; }
+  .scale { margin: 6px 0 4px; }
+  .scale-title { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  .scale-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+  .scale-step { border-radius: 8px; padding: 4px 2px; text-align: center; color: #111; line-height: 1.1; }
+  .scale-step b { display: block; font-size: 14px; }
+  .scale-step span { font-size: 9.5px; font-weight: 600; }
+  .scale-step.l4, .scale-step.l5 { color: #fff; }
   .hint { color: var(--muted); font-size: 13px; margin: 10px 2px 0; }
   .card { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
     transition: box-shadow .15s; position: relative; }
@@ -178,11 +186,16 @@ function renderList() {
   if (!DATA.bulletinAvailable) {
     html += `<div class="notice"><strong>No avalanche bulletin right now.</strong> SLF publishes the daily bulletin once the winter season starts. Snow and wind readings below are still live.</div>`;
   }
-  html += `<div class="hint">Tip: tap and hold a spot to move it up or down.</div>`;
+  html += `<div class="scale" aria-label="Avalanche danger scale">
+    <div class="scale-title">Avalanche danger scale (official European scale)</div>
+    <div class="scale-row">${[1,2,3,4,5].map(l => `<div class="scale-step l${l}"><b>${l}</b><span>${LEVEL_NAME[l]}</span></div>`).join("")}</div>
+  </div>
+  <div class="hint">Tip: tap and hold a spot to move it up or down.</div>`;
   for (const s of orderedSpots()) {
     const b = s.bulletin, st = s.station;
     const top = b ? maxRating(b.dangerRatings) : null;
-    const ratingLine = b && b.dangerRatings.length
+    const single = b && b.dangerRatings.length === 1 && b.dangerRatings[0].lower == null && b.dangerRatings[0].upper == null;
+    const ratingLine = single ? "Same at all altitudes" : b && b.dangerRatings.length
       ? b.dangerRatings.map(r => `${r.level}${sub(r.subdivision)} ${elevLabel(r.lower, r.upper)}${PERIOD_NAME[r.period] ? " (" + PERIOD_NAME[r.period] + ")" : ""}`).join(" · ")
       : (b ? "No danger rating" : "Not in today's bulletin, often because there isn't enough snow yet");
     const problems = b ? [...new Set(b.problems.map(p => PROBLEM_NAME[p.type] || p.type))] : [];
@@ -192,6 +205,7 @@ function renderList() {
           ${chip(top)}
           <div class="grow">
             <div class="name">${esc(s.name)}</div>
+            <div class="danger-word">${top && top.level ? `Avalanche danger: <b>${LEVEL_NAME[top.level]}</b>` : "Avalanche danger: <b>no rating</b>"}</div>
             <div class="sub">${esc(ratingLine)}</div>
           </div>
         </div>
@@ -423,7 +437,7 @@ function renderDetail() {
       <div class="stats">
         <div class="stat"><b>${num(st.snowDepth, " cm")}</b><span>snow depth</span></div>
         <div class="stat"><b>${num(st.newSnow24, " cm")}</b><span>new snow 24 h</span></div>
-        <div class="stat"><b>${st.depthChange72 == null ? "–" : (st.depthChange72 > 0 ? "+" : "") + num(st.depthChange72, " cm")}</b><span>depth change 72 h</span></div>
+        <div class="stat"><b>${st.depthChange24 == null ? "–" : (st.depthChange24 > 0 ? "+" : "") + num(st.depthChange24, " cm")}</b><span>depth change 24 h</span></div>
         <div class="stat"><b>${num(kmh(st.windMean), "")}<small> km/h</small></b><span>wind ${compassName(st.windDir)}</span></div>
         <div class="stat"><b>${num(kmh(st.windGustMax24), "")}<small> km/h</small></b><span>max gust 24 h</span></div>
         <div class="stat"><b>${num(st.airTemp, "°C", 1)}</b><span>air temp</span></div>

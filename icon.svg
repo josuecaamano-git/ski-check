@@ -1,30 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 150 300 300">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#081224"/>
-      <stop offset="1" stop-color="#1b3358"/>
+      <stop offset="0" stop-color="#2d5c9e"/>
+      <stop offset="1" stop-color="#7fa6d6"/>
     </linearGradient>
     <linearGradient id="snow" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f4f8fd"/>
       <stop offset="1" stop-color="#b9cde6"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="0" fill="url(#sky)"/>
+  <rect x="0" y="0" width="512" height="512" fill="url(#sky)"/>
   <g fill="#fff">
-    <circle cx="70" cy="70" r="3"/><circle cx="150" cy="40" r="2"/><circle cx="230" cy="90" r="2.5"/>
+    <circle cx="70" cy="70" r="3"/><circle cx="150" cy="40" r="2"/>
     <circle cx="300" cy="45" r="2"/><circle cx="460" cy="190" r="2"/><circle cx="40" cy="170" r="2"/>
     <circle cx="190" cy="150" r="1.8"/>
   </g>
-  <circle cx="400" cy="105" r="40" fill="#f3e9c6"/>
+  <circle cx="405" cy="200" r="26" fill="#f3e9c6"/>
   <circle cx="385" cy="95" r="40" fill="#0d1a31" opacity="0.0"/>
   <!-- far ridge -->
-  <path d="M0 300 L90 200 L150 250 L230 150 L320 260 L380 210 L512 320 L512 512 L0 512 Z" fill="#2a4673"/>
+  <path d="M0 300 L90 200 L150 250 L230 150 L320 260 L380 210 L512 320 L512 512 L0 512 Z" fill="#24477c"/>
   <path d="M230 150 L262 190 L245 186 L230 200 L214 182 L200 186 Z" fill="#dfe9f6"/>
   <path d="M90 200 L112 225 L96 222 L84 232 L76 216 Z" fill="#dfe9f6"/>
   <!-- slope -->
   <path d="M0 250 L512 470 L512 512 L0 512 Z" fill="url(#snow)"/>
   <!-- ski track -->
   <path d="M0 268 C 90 300, 130 300, 205 334" stroke="#9fb7d6" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8"/>
+  <g stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M281 368 L307 326 L268 300" stroke-width="40"/>
+    <path d="M268 300 L306 260" stroke-width="50"/>
+    <path d="M300 268 L340 292" stroke-width="30"/>
+    <circle cx="341" cy="293" r="16" fill="#fff" stroke="none"/>
+    <circle cx="325" cy="240" r="25" fill="#fff" stroke="none"/>
+  </g>
   <!-- skier -->
   <g stroke-linecap="round" stroke-linejoin="round" fill="none">
     <!-- poles -->
