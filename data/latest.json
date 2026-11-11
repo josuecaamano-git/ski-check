@@ -1,0 +1,332 @@
+{
+ "generatedAt": "2026-11-11T19:34:26.462Z",
+ "bulletinAvailable": true,
+ "source": "WSL Institute for Snow and Avalanche Research SLF (CC BY 4.0) — www.slf.ch",
+ "errors": [],
+ "spots": [
+  {
+   "id": "leysin",
+   "name": "Leysin",
+   "top": 2205,
+   "region": null,
+   "bulletin": null,
+   "station": {
+    "code": "CHA3",
+    "name": "Col de Bretaye",
+    "elevation": 1780,
+    "distanceKm": 5.6,
+    "measuredAt": "2026-11-11T19:30:00Z",
+    "snowDepth": 0,
+    "newSnow24": 0,
+    "depthChange24": 0,
+    "depthChange72": null,
+    "airTemp": 6.3,
+    "windMean": 0.5,
+    "windGust": 3.3,
+    "windDir": 181.1,
+    "windGustMax24": 6.7
+   },
+   "stationCandidates": [
+    "CHA3",
+    "CHA2",
+    "ALI2"
+   ]
+  },
+  {
+   "id": "villars",
+   "name": "Villars-Gryon",
+   "top": 2120,
+   "region": {
+    "name": "Bex - Villars",
+    "matchedBy": "map"
+   },
+   "bulletin": {
+    "publicationTime": "2026-11-11T16:00:00Z",
+    "validFrom": "2026-11-11T16:00:00Z",
+    "validTo": "2026-11-12T16:00:00Z",
+    "nextUpdate": "2026-11-12T16:00:00Z",
+    "highlights": "",
+    "dangerRatings": [
+     {
+      "level": 1,
+      "value": "low",
+      "subdivision": null,
+      "lower": null,
+      "upper": null,
+      "period": "all_day"
+     }
+    ],
+    "problems": [
+     {
+      "type": "no_distinct_avalanche_problem",
+      "level": 1,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "W",
+       "NW"
+      ],
+      "lower": 2400,
+      "upper": null,
+      "period": "all_day",
+      "comment": "In some localities up to 10 cm of snow has fallen since Monday above approximately 2200 m. 5 to 10 cm of snow will fall on Thursday, in particular at high altitude. Mostly small avalanches are possible in particular in extremely steep terrain. \n Backcountry touring calls for careful route selection. The Avalanche Warning Service currently has only a small amount of information that has been collected in the field, so that the avalanche danger should be investigated especially thoroughly in the relevant locality."
+     }
+    ],
+    "snowpack": "Snowpack\nSince Monday, snowfall has occurred at high altitudes, accompanied by moderate southwesterly winds. Further snowfall is expected above 2400 m until Thursday afternoon, particularly along the northern Alpine ridge and the main Alpine ridge.\nThe new snow lies mainly on shaded slopes above approximately 2400 m, on top of a thin, mostly faceted old snowpack. Consequently, fractures are expected to occur within the old snowpack, particularly in areas where a continuous snow cover was already present before the snowfall.",
+    "travelAdvisory": "",
+    "tendency": "Outlook\nFriday\nDuring the night into Friday, the snow line will drop to around 1000 m along the northern flank of the Alps. In the other regions, conditions will remain mild, with the snow line at around 2000 m. By midday on Friday, 5 to 15 cm of snow is expected to fall widely at higher elevations. The danger of dry avalanches will increase slightly.\n\nSaturday\nSaturday will be dry, with mostly sunny conditions in the north and partly sunny conditions in the south. On sunny slopes, isolated wet snow slides are possible due to the fresh snowfall. On shady slopes, the avalanche danger will remain largely unchanged."
+   },
+   "station": {
+    "code": "CHA3",
+    "name": "Col de Bretaye",
+    "elevation": 1780,
+    "distanceKm": 0.4,
+    "measuredAt": "2026-11-11T19:30:00Z",
+    "snowDepth": 0,
+    "newSnow24": 0,
+    "depthChange24": 0,
+    "depthChange72": null,
+    "airTemp": 6.3,
+    "windMean": 0.5,
+    "windGust": 3.3,
+    "windDir": 181.1,
+    "windGustMax24": 6.7
+   },
+   "stationCandidates": [
+    "CHA3",
+    "CHA2",
+    "DIA2"
+   ]
+  },
+  {
+   "id": "diablerets",
+   "name": "Les Diablerets",
+   "top": 2120,
+   "region": {
+    "name": "Calanda",
+    "matchedBy": "map"
+   },
+   "bulletin": {
+    "publicationTime": "2026-11-11T16:00:00Z",
+    "validFrom": "2026-11-11T16:00:00Z",
+    "validTo": "2026-11-12T16:00:00Z",
+    "nextUpdate": "2026-11-12T16:00:00Z",
+    "highlights": "",
+    "dangerRatings": [
+     {
+      "level": 1,
+      "value": "low",
+      "subdivision": null,
+      "lower": null,
+      "upper": null,
+      "period": "all_day"
+     }
+    ],
+    "problems": [
+     {
+      "type": "no_distinct_avalanche_problem",
+      "level": 1,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "W",
+       "NW"
+      ],
+      "lower": 2400,
+      "upper": null,
+      "period": "all_day",
+      "comment": "In some localities up to 10 cm of snow has fallen since Monday above approximately 2200 m. 5 to 10 cm of snow will fall on Thursday, in particular at high altitude. Mostly small avalanches are possible in particular in extremely steep terrain. \n Backcountry touring calls for careful route selection. The Avalanche Warning Service currently has only a small amount of information that has been collected in the field, so that the avalanche danger should be investigated especially thoroughly in the relevant locality."
+     }
+    ],
+    "snowpack": "Snowpack\nSince Monday, snowfall has occurred at high altitudes, accompanied by moderate southwesterly winds. Further snowfall is expected above 2400 m until Thursday afternoon, particularly along the northern Alpine ridge and the main Alpine ridge.\nThe new snow lies mainly on shaded slopes above approximately 2400 m, on top of a thin, mostly faceted old snowpack. Consequently, fractures are expected to occur within the old snowpack, particularly in areas where a continuous snow cover was already present before the snowfall.",
+    "travelAdvisory": "",
+    "tendency": "Outlook\nFriday\nDuring the night into Friday, the snow line will drop to around 1000 m along the northern flank of the Alps. In the other regions, conditions will remain mild, with the snow line at around 2000 m. By midday on Friday, 5 to 15 cm of snow is expected to fall widely at higher elevations. The danger of dry avalanches will increase slightly.\n\nSaturday\nSaturday will be dry, with mostly sunny conditions in the north and partly sunny conditions in the south. On sunny slopes, isolated wet snow slides are possible due to the fresh snowfall. On shady slopes, the avalanche danger will remain largely unchanged."
+   },
+   "station": {
+    "code": "CHA2",
+    "name": "Pierres Fendues",
+    "elevation": 2218,
+    "distanceKm": 1.4,
+    "measuredAt": "2026-11-11T19:30:00Z",
+    "snowDepth": 0,
+    "newSnow24": 0,
+    "depthChange24": 0,
+    "depthChange72": null,
+    "airTemp": 4.2,
+    "windMean": 5.9,
+    "windGust": 11.1,
+    "windDir": 195.3,
+    "windGustMax24": 15.4
+   },
+   "stationCandidates": [
+    "CHA2",
+    "OBM2",
+    "CHA3"
+   ]
+  },
+  {
+   "id": "glacier3000",
+   "name": "Glacier 3000",
+   "top": 2971,
+   "region": {
+    "name": "Bex - Villars",
+    "matchedBy": "map"
+   },
+   "bulletin": {
+    "publicationTime": "2026-11-11T16:00:00Z",
+    "validFrom": "2026-11-11T16:00:00Z",
+    "validTo": "2026-11-12T16:00:00Z",
+    "nextUpdate": "2026-11-12T16:00:00Z",
+    "highlights": "",
+    "dangerRatings": [
+     {
+      "level": 1,
+      "value": "low",
+      "subdivision": null,
+      "lower": null,
+      "upper": null,
+      "period": "all_day"
+     }
+    ],
+    "problems": [
+     {
+      "type": "no_distinct_avalanche_problem",
+      "level": 1,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "W",
+       "NW"
+      ],
+      "lower": 2400,
+      "upper": null,
+      "period": "all_day",
+      "comment": "In some localities up to 10 cm of snow has fallen since Monday above approximately 2200 m. 5 to 10 cm of snow will fall on Thursday, in particular at high altitude. Mostly small avalanches are possible in particular in extremely steep terrain. \n Backcountry touring calls for careful route selection. The Avalanche Warning Service currently has only a small amount of information that has been collected in the field, so that the avalanche danger should be investigated especially thoroughly in the relevant locality."
+     }
+    ],
+    "snowpack": "Snowpack\nSince Monday, snowfall has occurred at high altitudes, accompanied by moderate southwesterly winds. Further snowfall is expected above 2400 m until Thursday afternoon, particularly along the northern Alpine ridge and the main Alpine ridge.\nThe new snow lies mainly on shaded slopes above approximately 2400 m, on top of a thin, mostly faceted old snowpack. Consequently, fractures are expected to occur within the old snowpack, particularly in areas where a continuous snow cover was already present before the snowfall.",
+    "travelAdvisory": "",
+    "tendency": "Outlook\nFriday\nDuring the night into Friday, the snow line will drop to around 1000 m along the northern flank of the Alps. In the other regions, conditions will remain mild, with the snow line at around 2000 m. By midday on Friday, 5 to 15 cm of snow is expected to fall widely at higher elevations. The danger of dry avalanches will increase slightly.\n\nSaturday\nSaturday will be dry, with mostly sunny conditions in the north and partly sunny conditions in the south. On sunny slopes, isolated wet snow slides are possible due to the fresh snowfall. On shady slopes, the avalanche danger will remain largely unchanged."
+   },
+   "station": {
+    "code": "DIA2",
+    "name": "Tsanfleuron",
+    "elevation": 2569,
+    "distanceKm": 3,
+    "measuredAt": "2026-11-11T19:30:00Z",
+    "snowDepth": 17,
+    "newSnow24": 0,
+    "depthChange24": 1,
+    "depthChange72": null,
+    "airTemp": 2,
+    "windMean": 3.7,
+    "windGust": 11.5,
+    "windDir": 222.6,
+    "windGustMax24": 19.4
+   },
+   "stationCandidates": [
+    "DIA2",
+    "CHA2",
+    "CON2"
+   ]
+  },
+  {
+   "id": "mosses",
+   "name": "Les Mosses",
+   "top": 1870,
+   "region": null,
+   "bulletin": null,
+   "station": {
+    "code": "CHA2",
+    "name": "Pierres Fendues",
+    "elevation": 2218,
+    "distanceKm": 5.3,
+    "measuredAt": "2026-11-11T19:30:00Z",
+    "snowDepth": 0,
+    "newSnow24": 0,
+    "depthChange24": 0,
+    "depthChange72": null,
+    "airTemp": 4.2,
+    "windMean": 5.9,
+    "windGust": 11.1,
+    "windDir": 195.3,
+    "windGustMax24": 15.4
+   },
+   "stationCandidates": [
+    "CHA2",
+    "CHA3",
+    "OBM2"
+   ]
+  },
+  {
+   "id": "champery",
+   "name": "Champéry / Les Crosets",
+   "top": 2277,
+   "region": {
+    "name": "Monthey - Val d'Illiez",
+    "matchedBy": "map"
+   },
+   "bulletin": {
+    "publicationTime": "2026-11-11T16:00:00Z",
+    "validFrom": "2026-11-11T16:00:00Z",
+    "validTo": "2026-11-12T16:00:00Z",
+    "nextUpdate": "2026-11-12T16:00:00Z",
+    "highlights": "",
+    "dangerRatings": [
+     {
+      "level": 1,
+      "value": "low",
+      "subdivision": null,
+      "lower": null,
+      "upper": null,
+      "period": "all_day"
+     }
+    ],
+    "problems": [
+     {
+      "type": "no_distinct_avalanche_problem",
+      "level": 1,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "W",
+       "NW"
+      ],
+      "lower": 2400,
+      "upper": null,
+      "period": "all_day",
+      "comment": "In some localities up to 10 cm of snow has fallen since Monday above approximately 2200 m. 5 to 10 cm of snow will fall on Thursday, in particular at high altitude. Mostly small avalanches are possible in particular in extremely steep terrain. \n Backcountry touring calls for careful route selection. The Avalanche Warning Service currently has only a small amount of information that has been collected in the field, so that the avalanche danger should be investigated especially thoroughly in the relevant locality."
+     }
+    ],
+    "snowpack": "Snowpack\nSince Monday, snowfall has occurred at high altitudes, accompanied by moderate southwesterly winds. Further snowfall is expected above 2400 m until Thursday afternoon, particularly along the northern Alpine ridge and the main Alpine ridge.\nThe new snow lies mainly on shaded slopes above approximately 2400 m, on top of a thin, mostly faceted old snowpack. Consequently, fractures are expected to occur within the old snowpack, particularly in areas where a continuous snow cover was already present before the snowfall.",
+    "travelAdvisory": "",
+    "tendency": "Outlook\nFriday\nDuring the night into Friday, the snow line will drop to around 1000 m along the northern flank of the Alps. In the other regions, conditions will remain mild, with the snow line at around 2000 m. By midday on Friday, 5 to 15 cm of snow is expected to fall widely at higher elevations. The danger of dry avalanches will increase slightly.\n\nSaturday\nSaturday will be dry, with mostly sunny conditions in the north and partly sunny conditions in the south. On sunny slopes, isolated wet snow slides are possible due to the fresh snowfall. On shady slopes, the avalanche danger will remain largely unchanged."
+   },
+   "station": {
+    "code": "ILI2",
+    "name": "Les Collines",
+    "elevation": 2022,
+    "distanceKm": 2.4,
+    "measuredAt": "2026-11-11T19:00:00Z",
+    "snowDepth": 0,
+    "newSnow24": 0,
+    "depthChange24": 0,
+    "depthChange72": null,
+    "airTemp": 5.6,
+    "windMean": 1.7,
+    "windGust": 7.7,
+    "windDir": 196.7,
+    "windGustMax24": 19.1
+   },
+   "stationCandidates": [
+    "ILI2",
+    "FNH2",
+    "GRA2"
+   ]
+  }
+ ]
+}
