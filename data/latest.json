@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T03:01:55.397Z",
+ "generatedAt": "2026-11-20T11:23:30.560Z",
  "bulletinAvailable": true,
  "source": "WSL Institute for Snow and Avalanche Research SLF (CC BY 4.0) — www.slf.ch",
  "errors": [],
@@ -13,10 +13,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-19T16:00:00Z",
-    "validFrom": "2026-11-19T16:00:00Z",
+    "publicationTime": "2026-11-20T07:00:00Z",
+    "validFrom": "2026-11-20T07:00:00Z",
     "validTo": "2026-11-20T16:00:00Z",
-    "nextUpdate": "2026-11-20T07:00:00Z",
+    "nextUpdate": "2026-11-20T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -42,7 +42,7 @@
       "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "As a consequence of new snow and strong wind the wind slabs will increase in size additionally. Single winter sport participants can release avalanches, including medium-sized ones. These can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The fresh snow of the last few days and in particular the sometimes large wind slabs represent the main danger. Single winter sport participants can release avalanches, including medium-sized ones. These can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      }
     ],
     "snowpack": "Before the current precipitation, there was only a little snow. On Tuesday, the snowpack became moist due to rain up to high altitude. It is therefore a rather favourable base for the snow deposited on it since then. Avalanche releases are possible especially within the various layers of new and wind-drifted snow.",
@@ -54,17 +54,17 @@
     "name": "Col de Bretaye",
     "elevation": 1780,
     "distanceKm": 5.6,
-    "measuredAt": "2026-11-20T02:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 20.7,
+    "measuredAt": "2026-11-20T10:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 24.1,
     "newSnow24": 11,
-    "depthChange24": 20.7,
+    "depthChange24": 9.6,
     "depthChange72": null,
-    "airTemp": -1.1,
-    "windMean": 0.2,
-    "windGust": 3.8,
-    "windDir": 163.7,
-    "windGustMax24": 5.7
+    "airTemp": -1,
+    "windMean": null,
+    "windGust": null,
+    "windDir": null,
+    "windGustMax24": null
    },
    "stationCandidates": [
     "CHA3",
@@ -81,10 +81,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-19T16:00:00Z",
-    "validFrom": "2026-11-19T16:00:00Z",
+    "publicationTime": "2026-11-20T07:00:00Z",
+    "validFrom": "2026-11-20T07:00:00Z",
     "validTo": "2026-11-20T16:00:00Z",
-    "nextUpdate": "2026-11-20T07:00:00Z",
+    "nextUpdate": "2026-11-20T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -105,12 +105,13 @@
        "NE",
        "E",
        "SE",
+       "W",
        "NW"
       ],
-      "lower": 2400,
+      "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "As a consequence of the snowfall there will be an additional increase in the avalanche danger. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
+      "comment": "A lot of snow fell in the last few days. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
      }
     ],
     "snowpack": "In the last 4 days, 80 to 120 cm of snow fell above around 2200 m, and it will continue to snow on Friday as well. With the persistent strong westerly wind, large wind slabs also formed in areas distant from ridgelines. Avalanches can be triggered within the various new and wind-drifted snow layers. On north and east-facing slopes above around 2600 m, there is in some places coarse-grained, weak old snow at the snow base.",
@@ -122,17 +123,17 @@
     "name": "Col de Bretaye",
     "elevation": 1780,
     "distanceKm": 0.4,
-    "measuredAt": "2026-11-20T02:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 20.7,
+    "measuredAt": "2026-11-20T10:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 24.1,
     "newSnow24": 11,
-    "depthChange24": 20.7,
+    "depthChange24": 9.6,
     "depthChange72": null,
-    "airTemp": -1.1,
-    "windMean": 0.2,
-    "windGust": 3.8,
-    "windDir": 163.7,
-    "windGustMax24": 5.7
+    "airTemp": -1,
+    "windMean": null,
+    "windGust": null,
+    "windDir": null,
+    "windGustMax24": null
    },
    "stationCandidates": [
     "CHA3",
@@ -149,10 +150,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-19T16:00:00Z",
-    "validFrom": "2026-11-19T16:00:00Z",
+    "publicationTime": "2026-11-20T07:00:00Z",
+    "validFrom": "2026-11-20T07:00:00Z",
     "validTo": "2026-11-20T16:00:00Z",
-    "nextUpdate": "2026-11-20T07:00:00Z",
+    "nextUpdate": "2026-11-20T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -173,12 +174,13 @@
        "NE",
        "E",
        "SE",
+       "W",
        "NW"
       ],
-      "lower": 2400,
+      "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "As a consequence of the snowfall there will be an additional increase in the avalanche danger. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
+      "comment": "A lot of snow fell in the last few days. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
      }
     ],
     "snowpack": "In the last 4 days, 80 to 120 cm of snow fell above around 2200 m, and it will continue to snow on Friday as well. With the persistent strong westerly wind, large wind slabs also formed in areas distant from ridgelines. Avalanches can be triggered within the various new and wind-drifted snow layers. On north and east-facing slopes above around 2600 m, there is in some places coarse-grained, weak old snow at the snow base.",
@@ -190,17 +192,17 @@
     "name": "Pierres Fendues",
     "elevation": 2218,
     "distanceKm": 1.4,
-    "measuredAt": "2026-11-20T02:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 32.6,
+    "measuredAt": "2026-11-20T10:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 37.9,
     "newSnow24": 7.4,
-    "depthChange24": 31.6,
+    "depthChange24": 6.1,
     "depthChange72": null,
-    "airTemp": -3.6,
-    "windMean": 3,
-    "windGust": 8.2,
-    "windDir": 194.8,
-    "windGustMax24": 13
+    "airTemp": -3.4,
+    "windMean": 3.5,
+    "windGust": 10.4,
+    "windDir": 183.6,
+    "windGustMax24": 12.8
    },
    "stationCandidates": [
     "CHA2",
@@ -217,10 +219,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-19T16:00:00Z",
-    "validFrom": "2026-11-19T16:00:00Z",
+    "publicationTime": "2026-11-20T07:00:00Z",
+    "validFrom": "2026-11-20T07:00:00Z",
     "validTo": "2026-11-20T16:00:00Z",
-    "nextUpdate": "2026-11-20T07:00:00Z",
+    "nextUpdate": "2026-11-20T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -241,12 +243,13 @@
        "NE",
        "E",
        "SE",
+       "W",
        "NW"
       ],
-      "lower": 2400,
+      "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "As a consequence of the snowfall there will be an additional increase in the avalanche danger. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
+      "comment": "A lot of snow fell in the last few days. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
      }
     ],
     "snowpack": "In the last 4 days, 80 to 120 cm of snow fell above around 2200 m, and it will continue to snow on Friday as well. With the persistent strong westerly wind, large wind slabs also formed in areas distant from ridgelines. Avalanches can be triggered within the various new and wind-drifted snow layers. On north and east-facing slopes above around 2600 m, there is in some places coarse-grained, weak old snow at the snow base.",
@@ -258,17 +261,17 @@
     "name": "Tsanfleuron",
     "elevation": 2569,
     "distanceKm": 3,
-    "measuredAt": "2026-11-20T02:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 79.2,
+    "measuredAt": "2026-11-20T10:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 81.7,
     "newSnow24": 12.1,
-    "depthChange24": 34.2,
+    "depthChange24": 8.2,
     "depthChange72": null,
-    "airTemp": -4.9,
-    "windMean": 6.1,
-    "windGust": 12.6,
-    "windDir": 232.1,
-    "windGustMax24": 18.3
+    "airTemp": -5,
+    "windMean": 5.6,
+    "windGust": 12.4,
+    "windDir": 245.9,
+    "windGustMax24": 19.5
    },
    "stationCandidates": [
     "DIA2",
@@ -285,10 +288,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-19T16:00:00Z",
-    "validFrom": "2026-11-19T16:00:00Z",
+    "publicationTime": "2026-11-20T07:00:00Z",
+    "validFrom": "2026-11-20T07:00:00Z",
     "validTo": "2026-11-20T16:00:00Z",
-    "nextUpdate": "2026-11-20T07:00:00Z",
+    "nextUpdate": "2026-11-20T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -314,7 +317,7 @@
       "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "As a consequence of new snow and strong wind the wind slabs will increase in size additionally. Single winter sport participants can release avalanches, including medium-sized ones. These can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The fresh snow of the last few days and in particular the sometimes large wind slabs represent the main danger. Single winter sport participants can release avalanches, including medium-sized ones. These can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      }
     ],
     "snowpack": "Before the current precipitation, there was only a little snow. On Tuesday, the snowpack became moist due to rain up to high altitude. It is therefore a rather favourable base for the snow deposited on it since then. Avalanche releases are possible especially within the various layers of new and wind-drifted snow.",
@@ -326,17 +329,17 @@
     "name": "Pierres Fendues",
     "elevation": 2218,
     "distanceKm": 5.3,
-    "measuredAt": "2026-11-20T02:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 32.6,
+    "measuredAt": "2026-11-20T10:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 37.9,
     "newSnow24": 7.4,
-    "depthChange24": 31.6,
+    "depthChange24": 6.1,
     "depthChange72": null,
-    "airTemp": -3.6,
-    "windMean": 3,
-    "windGust": 8.2,
-    "windDir": 194.8,
-    "windGustMax24": 13
+    "airTemp": -3.4,
+    "windMean": 3.5,
+    "windGust": 10.4,
+    "windDir": 183.6,
+    "windGustMax24": 12.8
    },
    "stationCandidates": [
     "CHA2",
@@ -353,10 +356,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-19T16:00:00Z",
-    "validFrom": "2026-11-19T16:00:00Z",
+    "publicationTime": "2026-11-20T07:00:00Z",
+    "validFrom": "2026-11-20T07:00:00Z",
     "validTo": "2026-11-20T16:00:00Z",
-    "nextUpdate": "2026-11-20T07:00:00Z",
+    "nextUpdate": "2026-11-20T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -377,12 +380,13 @@
        "NE",
        "E",
        "SE",
+       "W",
        "NW"
       ],
-      "lower": 2400,
+      "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "As a consequence of the snowfall there will be an additional increase in the avalanche danger. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In very isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
+      "comment": "A lot of snow fell in the last few days. Avalanches can be released by a single winter sport participant. Natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring."
      }
     ],
     "snowpack": "In the last 4 days, 80 to 120 cm of snow fell above around 2200 m, and it will continue to snow on Friday as well. With the persistent strong westerly wind, large wind slabs also formed in areas distant from ridgelines. Avalanches can be triggered within the various new and wind-drifted snow layers. On north and east-facing slopes above around 2600 m, there is in some places coarse-grained, weak old snow at the snow base.",
@@ -394,17 +398,17 @@
     "name": "Les Collines",
     "elevation": 2022,
     "distanceKm": 2.4,
-    "measuredAt": "2026-11-20T02:30:00Z",
+    "measuredAt": "2026-11-20T10:30:00Z",
     "historyHours": 23,
-    "snowDepth": 31.5,
+    "snowDepth": 38.9,
     "newSnow24": 2.3,
-    "depthChange24": 24.3,
+    "depthChange24": 15.5,
     "depthChange72": null,
-    "airTemp": -2.5,
-    "windMean": 0.2,
-    "windGust": 4.1,
-    "windDir": 234.1,
-    "windGustMax24": 13.7
+    "airTemp": -2,
+    "windMean": null,
+    "windGust": null,
+    "windDir": null,
+    "windGustMax24": null
    },
    "stationCandidates": [
     "ILI2",
