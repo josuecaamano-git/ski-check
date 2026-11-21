@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T09:38:18.360Z",
+ "generatedAt": "2026-11-21T17:23:17.042Z",
  "bulletinAvailable": true,
  "source": "WSL Institute for Snow and Avalanche Research SLF (CC BY 4.0) — www.slf.ch",
  "errors": [],
@@ -13,10 +13,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-21T07:00:00Z",
-    "validFrom": "2026-11-21T07:00:00Z",
-    "validTo": "2026-11-21T16:00:00Z",
-    "nextUpdate": "2026-11-21T16:00:00Z",
+    "publicationTime": "2026-11-21T16:00:00Z",
+    "validFrom": "2026-11-21T16:00:00Z",
+    "validTo": "2026-11-22T16:00:00Z",
+    "nextUpdate": "2026-11-22T07:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -37,34 +37,73 @@
        "NE",
        "E",
        "SE",
+       "S",
+       "SW",
+       "W",
        "NW"
       ],
       "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "Single winter sport participants can release avalanches, including medium-sized ones. These can be released in the new snow and wind slab layers. The avalanche prone locations are to be found in particular in gullies and bowls, and behind abrupt changes in the terrain. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The new snow and wind slabs of the last few days are in some cases still prone to triggering. Single winter sport participants can release avalanches, including large ones. \n As the day progresses as a consequence of new snow and wind there will be an appreciable increase in the avalanche danger. In the afternoon natural avalanches are to be expected. This applies in particular on north and east facing slopes. \n Backcountry touring calls for extensive experience in the assessment of avalanche danger and caution."
+     },
+     {
+      "type": "wet_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     },
+     {
+      "type": "gliding_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
      }
     ],
-    "snowpack": "The new and wind-drifted snow of the last 3 days was deposited on bare ground or locally, on shady slopes at elevated altitudes, on a mostly favourable old snowpack. The snow distribution is very irregular. With the strong westerly wind, in some cases large wind slabs formed, while exposed terrain features remained almost snow-free. Until Saturday late morning, further unstable wind slabs will form. Avalanche releases are possible especially in the new and wind-drifted snow.",
+    "snowpack": "The new and wind-drifted snow from this week is stabilizing. With further snowfall and an increasingly strong westerly wind, wind slabs will form at elevated altitudes as the day progresses. Below 2000 m the snowpack will be weakened by warmth and rain.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nAs the day progresses as a consequence of the precipitation there will be an increase in the avalanche danger. In the afternoon more frequent natural avalanches are to be expected. Backcountry touring calls for experience in the assessment of avalanche danger and caution.\nWet-snow avalanches\nAs a consequence of the rain wet small and medium sized avalanches are to be expected from the late morning. This applies in all aspects in particular below approximately 2000 m."
+    "tendency": "Dry avalanches\nAvalanches can be released, even by a single winter sport participant. Natural avalanches are to be expected. These can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring.\nWet-snow avalanches\nOn steep grassy slopes medium-sized gliding avalanches are to be expected below approximately 2400 m. Caution is to be exercised in areas with glide cracks."
    },
    "station": {
     "code": "CHA3",
     "name": "Col de Bretaye",
     "elevation": 1780,
     "distanceKm": 5.6,
-    "measuredAt": "2026-11-21T09:30:00Z",
+    "measuredAt": "2026-11-21T17:00:00Z",
     "historyHours": 24,
-    "snowDepth": 27.8,
+    "snowDepth": 28.2,
     "newSnow24": 16.7,
-    "depthChange24": 7.5,
+    "depthChange24": 2.8,
     "depthChange72": null,
-    "airTemp": 0.1,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": -1.6,
+    "windMean": 0.4,
+    "windGust": 1.3,
+    "windDir": 197.7,
+    "windGustMax24": 4.1
    },
    "stationCandidates": [
     "CHA3",
@@ -81,16 +120,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-21T07:00:00Z",
-    "validFrom": "2026-11-21T07:00:00Z",
-    "validTo": "2026-11-21T16:00:00Z",
-    "nextUpdate": "2026-11-21T16:00:00Z",
+    "publicationTime": "2026-11-21T16:00:00Z",
+    "validFrom": "2026-11-21T16:00:00Z",
+    "validTo": "2026-11-22T16:00:00Z",
+    "nextUpdate": "2026-11-22T07:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
-      "level": 4,
-      "value": "high",
-      "subdivision": "minus",
+      "level": 3,
+      "value": "considerable",
+      "subdivision": "neutral",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -99,41 +138,79 @@
     "problems": [
      {
       "type": "new_snow",
-      "level": 4,
+      "level": 3,
       "aspects": [
        "N",
        "NE",
        "E",
        "SE",
+       "S",
+       "SW",
        "W",
        "NW"
       ],
-      "lower": 2200,
+      "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "A lot of snow fell in the last few days. As a consequence of the ceasing of precipitation only isolated natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The danger of natural avalanches will decrease during the day. Avalanches can as before be released by a single winter sport participant. The conditions are critical for backcountry touring."
+      "comment": "The new snow and wind slabs of the last few days are in some cases still prone to triggering. Single winter sport participants can release avalanches, including large ones. \n As the day progresses as a consequence of new snow and wind there will be an appreciable increase in the avalanche danger. In the afternoon natural avalanches are to be expected. This applies in particular on north and east facing slopes. \n Backcountry touring calls for extensive experience in the assessment of avalanche danger and caution."
+     },
+     {
+      "type": "wet_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     },
+     {
+      "type": "gliding_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
      }
     ],
-    "snowpack": "Over the last 5 days, 100 to 150 cm of snow fell over a wide area above approximately 2200 m, and snowfall will continue until Saturday morning. With strong westerly wind, the large wind slabs will grow somewhat further. As the snowfall ends, the large amounts of new and wind-drifted snow will gradually stabilize from Saturday. On north-facing and east-facing slopes above approximately 2600 m, there is in some places coarse-grained old snow at the snow base. Due to the thick covering by new and wind-drifted snow, the probability of fractures in these deep layers is decreasing rapidly.",
+    "snowpack": "The large amounts of new and wind-drifted snow from this week are stabilising. With renewed snowfall and an increasingly strong westerly wind, wind slabs will form at elevated altitudes as the day progresses. Below 2000 m the snowpack will be weakened by warmth and rain.\nOn north- and east-facing slopes above approximately 2600 m there is, in some places, coarse-grained old snow at the snow base. Due to being covered by large amounts of new and wind-drifted snow, it can scarcely be triggered anymore.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nAs the day progresses as a consequence of the precipitation there will be an increase in the avalanche danger. In the afternoon more frequent natural avalanches are to be expected. Backcountry touring calls for experience in the assessment of avalanche danger and caution.\nWet-snow avalanches\nAs a consequence of the rain wet small and medium sized avalanches are to be expected from the late morning. This applies in all aspects in particular below approximately 2000 m."
+    "tendency": "Dry avalanches\n150 to 250 cm of snow fell in the last eight days above approximately 2200 m. A large number of natural avalanches are to be expected, even large ones. In isolated cases avalanches can also be triggered in near-ground layers and reach very large size. This applies in particular on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can reach as far as the valley bottom and endanger transportation routes that are exposed. \n The conditions are very dangerous for backcountry touring.\nWet-snow avalanches\nOn steep grassy slopes medium-sized gliding avalanches are to be expected below approximately 2400 m. Caution is to be exercised in areas with glide cracks."
    },
    "station": {
     "code": "CHA3",
     "name": "Col de Bretaye",
     "elevation": 1780,
     "distanceKm": 0.4,
-    "measuredAt": "2026-11-21T09:30:00Z",
+    "measuredAt": "2026-11-21T17:00:00Z",
     "historyHours": 24,
-    "snowDepth": 27.8,
+    "snowDepth": 28.2,
     "newSnow24": 16.7,
-    "depthChange24": 7.5,
+    "depthChange24": 2.8,
     "depthChange72": null,
-    "airTemp": 0.1,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": -1.6,
+    "windMean": 0.4,
+    "windGust": 1.3,
+    "windDir": 197.7,
+    "windGustMax24": 4.1
    },
    "stationCandidates": [
     "CHA3",
@@ -150,16 +227,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-21T07:00:00Z",
-    "validFrom": "2026-11-21T07:00:00Z",
-    "validTo": "2026-11-21T16:00:00Z",
-    "nextUpdate": "2026-11-21T16:00:00Z",
+    "publicationTime": "2026-11-21T16:00:00Z",
+    "validFrom": "2026-11-21T16:00:00Z",
+    "validTo": "2026-11-22T16:00:00Z",
+    "nextUpdate": "2026-11-22T07:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
-      "level": 4,
-      "value": "high",
-      "subdivision": "minus",
+      "level": 3,
+      "value": "considerable",
+      "subdivision": "neutral",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -168,40 +245,78 @@
     "problems": [
      {
       "type": "new_snow",
-      "level": 4,
+      "level": 3,
       "aspects": [
        "N",
        "NE",
        "E",
        "SE",
+       "S",
+       "SW",
        "W",
        "NW"
       ],
-      "lower": 2200,
+      "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "A lot of snow fell in the last few days. As a consequence of the ceasing of precipitation only isolated natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The danger of natural avalanches will decrease during the day. Avalanches can as before be released by a single winter sport participant. The conditions are critical for backcountry touring."
+      "comment": "The new snow and wind slabs of the last few days are in some cases still prone to triggering. Single winter sport participants can release avalanches, including large ones. \n As the day progresses as a consequence of new snow and wind there will be an appreciable increase in the avalanche danger. In the afternoon natural avalanches are to be expected. This applies in particular on north and east facing slopes. \n Backcountry touring calls for extensive experience in the assessment of avalanche danger and caution."
+     },
+     {
+      "type": "wet_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     },
+     {
+      "type": "gliding_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
      }
     ],
-    "snowpack": "Over the last 5 days, 100 to 150 cm of snow fell over a wide area above approximately 2200 m, and snowfall will continue until Saturday morning. With strong westerly wind, the large wind slabs will grow somewhat further. As the snowfall ends, the large amounts of new and wind-drifted snow will gradually stabilize from Saturday. On north-facing and east-facing slopes above approximately 2600 m, there is in some places coarse-grained old snow at the snow base. Due to the thick covering by new and wind-drifted snow, the probability of fractures in these deep layers is decreasing rapidly.",
+    "snowpack": "The large amounts of new and wind-drifted snow from this week are stabilising. With renewed snowfall and an increasingly strong westerly wind, wind slabs will form at elevated altitudes as the day progresses. Below 2000 m the snowpack will be weakened by warmth and rain.\nOn north- and east-facing slopes above approximately 2600 m there is, in some places, coarse-grained old snow at the snow base. Due to being covered by large amounts of new and wind-drifted snow, it can scarcely be triggered anymore.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nAs the day progresses as a consequence of the precipitation there will be an increase in the avalanche danger. In the afternoon more frequent natural avalanches are to be expected. Backcountry touring calls for experience in the assessment of avalanche danger and caution.\nWet-snow avalanches\nAs a consequence of the rain wet small and medium sized avalanches are to be expected from the late morning. This applies in all aspects in particular below approximately 2000 m."
+    "tendency": "Dry avalanches\n150 to 250 cm of snow fell in the last eight days above approximately 2200 m. A large number of natural avalanches are to be expected, even large ones. In isolated cases avalanches can also be triggered in near-ground layers and reach very large size. This applies in particular on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can reach as far as the valley bottom and endanger transportation routes that are exposed. \n The conditions are very dangerous for backcountry touring.\nWet-snow avalanches\nOn steep grassy slopes medium-sized gliding avalanches are to be expected below approximately 2400 m. Caution is to be exercised in areas with glide cracks."
    },
    "station": {
     "code": "CHA2",
     "name": "Pierres Fendues",
     "elevation": 2218,
     "distanceKm": 1.4,
-    "measuredAt": "2026-11-21T09:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 41.4,
+    "measuredAt": "2026-11-21T16:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 45,
     "newSnow24": 33.6,
-    "depthChange24": 2.8,
+    "depthChange24": 9.9,
     "depthChange72": null,
-    "airTemp": -2.4,
-    "windMean": 0.1,
-    "windGust": 2.1,
-    "windDir": 171.1,
+    "airTemp": -4.4,
+    "windMean": 3.1,
+    "windGust": 4.9,
+    "windDir": 224.6,
     "windGustMax24": 15.2
    },
    "stationCandidates": [
@@ -219,79 +334,10 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-21T07:00:00Z",
-    "validFrom": "2026-11-21T07:00:00Z",
-    "validTo": "2026-11-21T16:00:00Z",
-    "nextUpdate": "2026-11-21T16:00:00Z",
-    "highlights": "",
-    "dangerRatings": [
-     {
-      "level": 4,
-      "value": "high",
-      "subdivision": "minus",
-      "lower": null,
-      "upper": null,
-      "period": "all_day"
-     }
-    ],
-    "problems": [
-     {
-      "type": "new_snow",
-      "level": 4,
-      "aspects": [
-       "N",
-       "NE",
-       "E",
-       "SE",
-       "W",
-       "NW"
-      ],
-      "lower": 2200,
-      "upper": null,
-      "period": "all_day",
-      "comment": "A lot of snow fell in the last few days. As a consequence of the ceasing of precipitation only isolated natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The danger of natural avalanches will decrease during the day. Avalanches can as before be released by a single winter sport participant. The conditions are critical for backcountry touring."
-     }
-    ],
-    "snowpack": "Over the last 5 days, 100 to 150 cm of snow fell over a wide area above approximately 2200 m, and snowfall will continue until Saturday morning. With strong westerly wind, the large wind slabs will grow somewhat further. As the snowfall ends, the large amounts of new and wind-drifted snow will gradually stabilize from Saturday. On north-facing and east-facing slopes above approximately 2600 m, there is in some places coarse-grained old snow at the snow base. Due to the thick covering by new and wind-drifted snow, the probability of fractures in these deep layers is decreasing rapidly.",
-    "travelAdvisory": "",
-    "tendency": "Dry avalanches\nAs the day progresses as a consequence of the precipitation there will be an increase in the avalanche danger. In the afternoon more frequent natural avalanches are to be expected. Backcountry touring calls for experience in the assessment of avalanche danger and caution.\nWet-snow avalanches\nAs a consequence of the rain wet small and medium sized avalanches are to be expected from the late morning. This applies in all aspects in particular below approximately 2000 m."
-   },
-   "station": {
-    "code": "DIA2",
-    "name": "Tsanfleuron",
-    "elevation": 2569,
-    "distanceKm": 3,
-    "measuredAt": "2026-11-21T09:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 88.7,
-    "newSnow24": 38.7,
-    "depthChange24": 7.2,
-    "depthChange72": null,
-    "airTemp": -3.7,
-    "windMean": 2.6,
-    "windGust": 7.4,
-    "windDir": 286.1,
-    "windGustMax24": 19.5
-   },
-   "stationCandidates": [
-    "DIA2",
-    "CHA2",
-    "CON2"
-   ]
-  },
-  {
-   "id": "mosses",
-   "name": "Les Mosses",
-   "top": 1870,
-   "region": {
-    "name": null,
-    "matchedBy": "map"
-   },
-   "bulletin": {
-    "publicationTime": "2026-11-21T07:00:00Z",
-    "validFrom": "2026-11-21T07:00:00Z",
-    "validTo": "2026-11-21T16:00:00Z",
-    "nextUpdate": "2026-11-21T16:00:00Z",
+    "publicationTime": "2026-11-21T16:00:00Z",
+    "validFrom": "2026-11-21T16:00:00Z",
+    "validTo": "2026-11-22T16:00:00Z",
+    "nextUpdate": "2026-11-22T07:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
@@ -312,33 +358,179 @@
        "NE",
        "E",
        "SE",
+       "S",
+       "SW",
+       "W",
        "NW"
       ],
       "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "Single winter sport participants can release avalanches, including medium-sized ones. These can be released in the new snow and wind slab layers. The avalanche prone locations are to be found in particular in gullies and bowls, and behind abrupt changes in the terrain. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The new snow and wind slabs of the last few days are in some cases still prone to triggering. Single winter sport participants can release avalanches, including large ones. \n As the day progresses as a consequence of new snow and wind there will be an appreciable increase in the avalanche danger. In the afternoon natural avalanches are to be expected. This applies in particular on north and east facing slopes. \n Backcountry touring calls for extensive experience in the assessment of avalanche danger and caution."
+     },
+     {
+      "type": "wet_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     },
+     {
+      "type": "gliding_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
      }
     ],
-    "snowpack": "The new and wind-drifted snow of the last 3 days was deposited on bare ground or locally, on shady slopes at elevated altitudes, on a mostly favourable old snowpack. The snow distribution is very irregular. With the strong westerly wind, in some cases large wind slabs formed, while exposed terrain features remained almost snow-free. Until Saturday late morning, further unstable wind slabs will form. Avalanche releases are possible especially in the new and wind-drifted snow.",
+    "snowpack": "The large amounts of new and wind-drifted snow from this week are stabilising. With renewed snowfall and an increasingly strong westerly wind, wind slabs will form at elevated altitudes as the day progresses. Below 2000 m the snowpack will be weakened by warmth and rain.\nOn north- and east-facing slopes above approximately 2600 m there is, in some places, coarse-grained old snow at the snow base. Due to being covered by large amounts of new and wind-drifted snow, it can scarcely be triggered anymore.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nAs the day progresses as a consequence of the precipitation there will be an increase in the avalanche danger. In the afternoon more frequent natural avalanches are to be expected. Backcountry touring calls for experience in the assessment of avalanche danger and caution.\nWet-snow avalanches\nAs a consequence of the rain wet small and medium sized avalanches are to be expected from the late morning. This applies in all aspects in particular below approximately 2000 m."
+    "tendency": "Dry avalanches\n150 to 250 cm of snow fell in the last eight days above approximately 2200 m. A large number of natural avalanches are to be expected, even large ones. In isolated cases avalanches can also be triggered in near-ground layers and reach very large size. This applies in particular on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can reach as far as the valley bottom and endanger transportation routes that are exposed. \n The conditions are very dangerous for backcountry touring.\nWet-snow avalanches\nOn steep grassy slopes medium-sized gliding avalanches are to be expected below approximately 2400 m. Caution is to be exercised in areas with glide cracks."
+   },
+   "station": {
+    "code": "DIA2",
+    "name": "Tsanfleuron",
+    "elevation": 2569,
+    "distanceKm": 3,
+    "measuredAt": "2026-11-21T17:00:00Z",
+    "historyHours": 24,
+    "snowDepth": 86.9,
+    "newSnow24": 38.7,
+    "depthChange24": 12.7,
+    "depthChange72": null,
+    "airTemp": -3.1,
+    "windMean": 2.8,
+    "windGust": 7.4,
+    "windDir": 235.3,
+    "windGustMax24": 17.3
+   },
+   "stationCandidates": [
+    "DIA2",
+    "CHA2",
+    "CON2"
+   ]
+  },
+  {
+   "id": "mosses",
+   "name": "Les Mosses",
+   "top": 1870,
+   "region": {
+    "name": null,
+    "matchedBy": "map"
+   },
+   "bulletin": {
+    "publicationTime": "2026-11-21T16:00:00Z",
+    "validFrom": "2026-11-21T16:00:00Z",
+    "validTo": "2026-11-22T16:00:00Z",
+    "nextUpdate": "2026-11-22T07:00:00Z",
+    "highlights": "",
+    "dangerRatings": [
+     {
+      "level": 3,
+      "value": "considerable",
+      "subdivision": "neutral",
+      "lower": null,
+      "upper": null,
+      "period": "all_day"
+     }
+    ],
+    "problems": [
+     {
+      "type": "new_snow",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": 2000,
+      "upper": null,
+      "period": "all_day",
+      "comment": "The new snow and wind slabs of the last few days are in some cases still prone to triggering. Single winter sport participants can release avalanches, including large ones. \n As the day progresses as a consequence of new snow and wind there will be an appreciable increase in the avalanche danger. In the afternoon natural avalanches are to be expected. This applies in particular on north and east facing slopes. \n Backcountry touring calls for extensive experience in the assessment of avalanche danger and caution."
+     },
+     {
+      "type": "wet_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     },
+     {
+      "type": "gliding_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     }
+    ],
+    "snowpack": "The new and wind-drifted snow from this week is stabilizing. With further snowfall and an increasingly strong westerly wind, wind slabs will form at elevated altitudes as the day progresses. Below 2000 m the snowpack will be weakened by warmth and rain.",
+    "travelAdvisory": "",
+    "tendency": "Dry avalanches\nAvalanches can be released, even by a single winter sport participant. Natural avalanches are to be expected. These can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The conditions are very critical for backcountry touring.\nWet-snow avalanches\nOn steep grassy slopes medium-sized gliding avalanches are to be expected below approximately 2400 m. Caution is to be exercised in areas with glide cracks."
    },
    "station": {
     "code": "CHA2",
     "name": "Pierres Fendues",
     "elevation": 2218,
     "distanceKm": 5.3,
-    "measuredAt": "2026-11-21T09:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 41.4,
+    "measuredAt": "2026-11-21T16:30:00Z",
+    "historyHours": 23,
+    "snowDepth": 45,
     "newSnow24": 33.6,
-    "depthChange24": 2.8,
+    "depthChange24": 9.9,
     "depthChange72": null,
-    "airTemp": -2.4,
-    "windMean": 0.1,
-    "windGust": 2.1,
-    "windDir": 171.1,
+    "airTemp": -4.4,
+    "windMean": 3.1,
+    "windGust": 4.9,
+    "windDir": 224.6,
     "windGustMax24": 15.2
    },
    "stationCandidates": [
@@ -356,16 +548,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-21T07:00:00Z",
-    "validFrom": "2026-11-21T07:00:00Z",
-    "validTo": "2026-11-21T16:00:00Z",
-    "nextUpdate": "2026-11-21T16:00:00Z",
+    "publicationTime": "2026-11-21T16:00:00Z",
+    "validFrom": "2026-11-21T16:00:00Z",
+    "validTo": "2026-11-22T16:00:00Z",
+    "nextUpdate": "2026-11-22T07:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
-      "level": 4,
-      "value": "high",
-      "subdivision": "minus",
+      "level": 3,
+      "value": "considerable",
+      "subdivision": "neutral",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -374,41 +566,79 @@
     "problems": [
      {
       "type": "new_snow",
-      "level": 4,
+      "level": 3,
       "aspects": [
        "N",
        "NE",
        "E",
        "SE",
+       "S",
+       "SW",
        "W",
        "NW"
       ],
-      "lower": 2200,
+      "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "A lot of snow fell in the last few days. As a consequence of the ceasing of precipitation only isolated natural avalanches are to be expected. They can be released in the new snow and wind slab layers. In isolated cases avalanches can also be triggered in the old snowpack, especially on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can in isolated cases reach very large size and endanger transportation routes situated at relatively high altitudes. \n The danger of natural avalanches will decrease during the day. Avalanches can as before be released by a single winter sport participant. The conditions are critical for backcountry touring."
+      "comment": "The new snow and wind slabs of the last few days are in some cases still prone to triggering. Single winter sport participants can release avalanches, including large ones. \n As the day progresses as a consequence of new snow and wind there will be an appreciable increase in the avalanche danger. In the afternoon natural avalanches are to be expected. This applies in particular on north and east facing slopes. \n Backcountry touring calls for extensive experience in the assessment of avalanche danger and caution."
+     },
+     {
+      "type": "wet_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
+     },
+     {
+      "type": "gliding_snow",
+      "level": 2,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": null,
+      "upper": 2000,
+      "period": "all_day",
+      "comment": "As a consequence of the rain wet and gliding avalanches are to be expected. Mostly these are medium-sized."
      }
     ],
-    "snowpack": "Over the last 5 days, 100 to 150 cm of snow fell over a wide area above approximately 2200 m, and snowfall will continue until Saturday morning. With strong westerly wind, the large wind slabs will grow somewhat further. As the snowfall ends, the large amounts of new and wind-drifted snow will gradually stabilize from Saturday. On north-facing and east-facing slopes above approximately 2600 m, there is in some places coarse-grained old snow at the snow base. Due to the thick covering by new and wind-drifted snow, the probability of fractures in these deep layers is decreasing rapidly.",
+    "snowpack": "The large amounts of new and wind-drifted snow from this week are stabilising. With renewed snowfall and an increasingly strong westerly wind, wind slabs will form at elevated altitudes as the day progresses. Below 2000 m the snowpack will be weakened by warmth and rain.\nOn north- and east-facing slopes above approximately 2600 m there is, in some places, coarse-grained old snow at the snow base. Due to being covered by large amounts of new and wind-drifted snow, it can scarcely be triggered anymore.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nAs the day progresses as a consequence of the precipitation there will be an increase in the avalanche danger. In the afternoon more frequent natural avalanches are to be expected. Backcountry touring calls for experience in the assessment of avalanche danger and caution.\nWet-snow avalanches\nAs a consequence of the rain wet small and medium sized avalanches are to be expected from the late morning. This applies in all aspects in particular below approximately 2000 m."
+    "tendency": "Dry avalanches\n150 to 250 cm of snow fell in the last eight days above approximately 2200 m. A large number of natural avalanches are to be expected, even large ones. In isolated cases avalanches can also be triggered in near-ground layers and reach very large size. This applies in particular on north and east facing slopes above approximately 2600 m. In the typical avalanche paths the avalanches can reach as far as the valley bottom and endanger transportation routes that are exposed. \n The conditions are very dangerous for backcountry touring.\nWet-snow avalanches\nOn steep grassy slopes medium-sized gliding avalanches are to be expected below approximately 2400 m. Caution is to be exercised in areas with glide cracks."
    },
    "station": {
     "code": "ILI2",
     "name": "Les Collines",
     "elevation": 2022,
     "distanceKm": 2.4,
-    "measuredAt": "2026-11-21T09:00:00Z",
-    "historyHours": 23,
-    "snowDepth": 49.7,
+    "measuredAt": "2026-11-21T17:00:00Z",
+    "historyHours": 24,
+    "snowDepth": 52.6,
     "newSnow24": 32.3,
-    "depthChange24": 11.1,
+    "depthChange24": 15.7,
     "depthChange72": null,
-    "airTemp": -0.7,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": -3.2,
+    "windMean": 2,
+    "windGust": 6.3,
+    "windDir": 250.6,
+    "windGustMax24": 8.5
    },
    "stationCandidates": [
     "ILI2",
