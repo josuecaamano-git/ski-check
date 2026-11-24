@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T05:56:13.082Z",
+ "generatedAt": "2026-11-24T17:34:32.866Z",
  "bulletinAvailable": true,
  "source": "WSL Institute for Snow and Avalanche Research SLF (CC BY 4.0) — www.slf.ch",
  "errors": [],
@@ -13,16 +13,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-23T16:00:00Z",
-    "validFrom": "2026-11-23T16:00:00Z",
-    "validTo": "2026-11-24T16:00:00Z",
-    "nextUpdate": "2026-11-24T16:00:00Z",
+    "publicationTime": "2026-11-24T16:00:00Z",
+    "validFrom": "2026-11-24T16:00:00Z",
+    "validTo": "2026-11-25T16:00:00Z",
+    "nextUpdate": "2026-11-25T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
       "level": 3,
       "value": "considerable",
-      "subdivision": "neutral",
+      "subdivision": "minus",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -37,46 +37,69 @@
        "NE",
        "E",
        "SE",
-       "S",
-       "SW",
        "W",
        "NW"
       ],
       "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "Large quantities of fresh snow and the wind-drifted snow of the last two days are in some cases prone to triggering. Single winter sport participants can release avalanches. In particular on north and east facing slopes these can in isolated cases reach large size. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "As a consequence of southerly wind, avalanche prone wind slabs will form. Single winter sport participants can release avalanches in some places. They can be released in the new snow and wind slab layers. Mostly avalanches are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+     },
+     {
+      "type": "wind_slab",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "W",
+       "NW"
+      ],
+      "lower": 2000,
+      "upper": null,
+      "period": "all_day",
+      "comment": "As a consequence of southerly wind, avalanche prone wind slabs will form. Single winter sport participants can release avalanches in some places. They can be released in the new snow and wind slab layers. Mostly avalanches are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      },
      {
       "type": "gliding_snow",
       "level": 2,
-      "aspects": [],
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
       "lower": null,
       "upper": null,
       "period": "all_day",
       "comment": "On grassy slopes numerous small and, in isolated cases, medium-sized gliding avalanches are to be expected. Caution is to be exercised in areas with glide cracks."
      }
     ],
-    "snowpack": "Weak layers prone to triggering are found especially in the layers of new and wind-drifted snow from the last few days. These will stabilize rapidly. Distinct, faceted weak layers are scarcely present.",
+    "snowpack": "The snow depths are above average for the time of year. Weak layers prone to triggering exist mainly in the new and wind-drifted snow layers of the last few days. These are stabilizing rapidly. Pronounced, faceted weak layers are scarcely present.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nThe danger of dry avalanches will decrease. However, persons can release avalanches as before. Careful route selection is required.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
+    "tendency": "Dry avalanches\nThe danger of dry avalanches will gradually decrease. However, persons can release avalanches as before. Careful route selection is required.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
    },
    "station": {
     "code": "CHA3",
     "name": "Col de Bretaye",
     "elevation": 1780,
     "distanceKm": 5.6,
-    "measuredAt": "2026-11-24T05:30:00Z",
+    "measuredAt": "2026-11-24T17:30:00Z",
     "historyHours": 24,
-    "snowDepth": 69.4,
+    "snowDepth": 66.9,
     "newSnow24": 47,
-    "depthChange24": -1.7,
+    "depthChange24": -5.7,
     "depthChange72": null,
-    "airTemp": -6.3,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": -1.7,
+    "windMean": 0.8,
+    "windGust": 2.3,
+    "windDir": 183.4,
+    "windGustMax24": 2.3
    },
    "stationCandidates": [
     "CHA3",
@@ -93,16 +116,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-23T16:00:00Z",
-    "validFrom": "2026-11-23T16:00:00Z",
-    "validTo": "2026-11-24T16:00:00Z",
-    "nextUpdate": "2026-11-24T16:00:00Z",
+    "publicationTime": "2026-11-24T16:00:00Z",
+    "validFrom": "2026-11-24T16:00:00Z",
+    "validTo": "2026-11-25T16:00:00Z",
+    "nextUpdate": "2026-11-25T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
       "level": 3,
       "value": "considerable",
-      "subdivision": "neutral",
+      "subdivision": "minus",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -125,11 +148,29 @@
       "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "Large quantities of fresh snow and the wind-drifted snow of the last two days are in some cases prone to triggering. Single winter sport participants can release avalanches, including large ones. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+     },
+     {
+      "type": "wind_slab",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": 2200,
+      "upper": null,
+      "period": "all_day",
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      },
      {
       "type": "gliding_snow",
-      "level": 2,
+      "level": 3,
       "aspects": [
        "E",
        "SE",
@@ -140,29 +181,29 @@
       "lower": null,
       "upper": 2400,
       "period": "all_day",
-      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided as far as possible."
+      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided."
      }
     ],
-    "snowpack": "Snow depths are well above average. Over a wide area there is two to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found mainly in the sometimes thick layers of new and wind-drifted snow from recent days. These will stabilize rapidly. \nAbove approximately 2600 m, on north- and east-facing slopes, there is still coarse-grained old snow in places at the snow base. This near-ground old snow is now overlain so thickly that fractures in near-ground layers of the snowpack are not very likely.",
+    "snowpack": "Snow depths are well above average. Over a wide area, there is twice to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found primarily in the sometimes thick new and wind-drifted snow layers of recent days. These are stabilizing rapidly.\nAbove approximately 2600 m, on north- and east-facing slopes, coarse-grained old snow is in some places still found at the snow base. This near-ground old snow has now been overlain by layers so thick that fractures in near-ground layers of the snowpack are not very likely.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nThe danger of dry avalanches will gradually decrease. Single winter sport participants can release avalanches as before. Backcountry touring calls for experience in the assessment of avalanche danger.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
+    "tendency": "Wet-snow avalanches\nGliding avalanches can be released at any time of day or night. They can reach large size. Areas with glide cracks are to be avoided.\nDry avalanches\nThe danger of dry avalanches will gradually decrease. However, persons can release avalanches as before. Careful route selection is required."
    },
    "station": {
     "code": "CHA3",
     "name": "Col de Bretaye",
     "elevation": 1780,
     "distanceKm": 0.4,
-    "measuredAt": "2026-11-24T05:30:00Z",
+    "measuredAt": "2026-11-24T17:30:00Z",
     "historyHours": 24,
-    "snowDepth": 69.4,
+    "snowDepth": 66.9,
     "newSnow24": 47,
-    "depthChange24": -1.7,
+    "depthChange24": -5.7,
     "depthChange72": null,
-    "airTemp": -6.3,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": -1.7,
+    "windMean": 0.8,
+    "windGust": 2.3,
+    "windDir": 183.4,
+    "windGustMax24": 2.3
    },
    "stationCandidates": [
     "CHA3",
@@ -179,16 +220,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-23T16:00:00Z",
-    "validFrom": "2026-11-23T16:00:00Z",
-    "validTo": "2026-11-24T16:00:00Z",
-    "nextUpdate": "2026-11-24T16:00:00Z",
+    "publicationTime": "2026-11-24T16:00:00Z",
+    "validFrom": "2026-11-24T16:00:00Z",
+    "validTo": "2026-11-25T16:00:00Z",
+    "nextUpdate": "2026-11-25T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
       "level": 3,
       "value": "considerable",
-      "subdivision": "neutral",
+      "subdivision": "minus",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -211,11 +252,29 @@
       "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "Large quantities of fresh snow and the wind-drifted snow of the last two days are in some cases prone to triggering. Single winter sport participants can release avalanches, including large ones. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+     },
+     {
+      "type": "wind_slab",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": 2200,
+      "upper": null,
+      "period": "all_day",
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      },
      {
       "type": "gliding_snow",
-      "level": 2,
+      "level": 3,
       "aspects": [
        "E",
        "SE",
@@ -226,29 +285,29 @@
       "lower": null,
       "upper": 2400,
       "period": "all_day",
-      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided as far as possible."
+      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided."
      }
     ],
-    "snowpack": "Snow depths are well above average. Over a wide area there is two to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found mainly in the sometimes thick layers of new and wind-drifted snow from recent days. These will stabilize rapidly. \nAbove approximately 2600 m, on north- and east-facing slopes, there is still coarse-grained old snow in places at the snow base. This near-ground old snow is now overlain so thickly that fractures in near-ground layers of the snowpack are not very likely.",
+    "snowpack": "Snow depths are well above average. Over a wide area, there is twice to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found primarily in the sometimes thick new and wind-drifted snow layers of recent days. These are stabilizing rapidly.\nAbove approximately 2600 m, on north- and east-facing slopes, coarse-grained old snow is in some places still found at the snow base. This near-ground old snow has now been overlain by layers so thick that fractures in near-ground layers of the snowpack are not very likely.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nThe danger of dry avalanches will gradually decrease. Single winter sport participants can release avalanches as before. Backcountry touring calls for experience in the assessment of avalanche danger.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
+    "tendency": "Wet-snow avalanches\nGliding avalanches can be released at any time of day or night. They can reach large size. Areas with glide cracks are to be avoided.\nDry avalanches\nThe danger of dry avalanches will gradually decrease. However, persons can release avalanches as before. Careful route selection is required."
    },
    "station": {
     "code": "CHA2",
     "name": "Pierres Fendues",
     "elevation": 2218,
     "distanceKm": 1.4,
-    "measuredAt": "2026-11-24T05:30:00Z",
+    "measuredAt": "2026-11-24T17:30:00Z",
     "historyHours": 24,
-    "snowDepth": 114.4,
+    "snowDepth": 104.4,
     "newSnow24": 76.7,
-    "depthChange24": 6.8,
+    "depthChange24": -10,
     "depthChange72": null,
-    "airTemp": -7.6,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": 2.5,
+    "windMean": 2.5,
+    "windGust": 4.4,
+    "windDir": 258,
+    "windGustMax24": 7.1
    },
    "stationCandidates": [
     "CHA2",
@@ -265,16 +324,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-23T16:00:00Z",
-    "validFrom": "2026-11-23T16:00:00Z",
-    "validTo": "2026-11-24T16:00:00Z",
-    "nextUpdate": "2026-11-24T16:00:00Z",
+    "publicationTime": "2026-11-24T16:00:00Z",
+    "validFrom": "2026-11-24T16:00:00Z",
+    "validTo": "2026-11-25T16:00:00Z",
+    "nextUpdate": "2026-11-25T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
       "level": 3,
       "value": "considerable",
-      "subdivision": "neutral",
+      "subdivision": "minus",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -297,11 +356,29 @@
       "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "Large quantities of fresh snow and the wind-drifted snow of the last two days are in some cases prone to triggering. Single winter sport participants can release avalanches, including large ones. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+     },
+     {
+      "type": "wind_slab",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": 2200,
+      "upper": null,
+      "period": "all_day",
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      },
      {
       "type": "gliding_snow",
-      "level": 2,
+      "level": 3,
       "aspects": [
        "E",
        "SE",
@@ -312,29 +389,29 @@
       "lower": null,
       "upper": 2400,
       "period": "all_day",
-      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided as far as possible."
+      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided."
      }
     ],
-    "snowpack": "Snow depths are well above average. Over a wide area there is two to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found mainly in the sometimes thick layers of new and wind-drifted snow from recent days. These will stabilize rapidly. \nAbove approximately 2600 m, on north- and east-facing slopes, there is still coarse-grained old snow in places at the snow base. This near-ground old snow is now overlain so thickly that fractures in near-ground layers of the snowpack are not very likely.",
+    "snowpack": "Snow depths are well above average. Over a wide area, there is twice to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found primarily in the sometimes thick new and wind-drifted snow layers of recent days. These are stabilizing rapidly.\nAbove approximately 2600 m, on north- and east-facing slopes, coarse-grained old snow is in some places still found at the snow base. This near-ground old snow has now been overlain by layers so thick that fractures in near-ground layers of the snowpack are not very likely.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nThe danger of dry avalanches will gradually decrease. Single winter sport participants can release avalanches as before. Backcountry touring calls for experience in the assessment of avalanche danger.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
+    "tendency": "Wet-snow avalanches\nGliding avalanches can be released at any time of day or night. They can reach large size. Areas with glide cracks are to be avoided.\nDry avalanches\nThe danger of dry avalanches will gradually decrease. However, persons can release avalanches as before. Careful route selection is required."
    },
    "station": {
     "code": "DIA2",
     "name": "Tsanfleuron",
     "elevation": 2569,
     "distanceKm": 3,
-    "measuredAt": "2026-11-24T05:30:00Z",
+    "measuredAt": "2026-11-24T17:30:00Z",
     "historyHours": 24,
-    "snowDepth": 137.5,
+    "snowDepth": 134.4,
     "newSnow24": 60.3,
-    "depthChange24": 0.6,
+    "depthChange24": -8.7,
     "depthChange72": null,
-    "airTemp": -5,
-    "windMean": 2.3,
-    "windGust": 4.1,
-    "windDir": 239.2,
-    "windGustMax24": 16
+    "airTemp": -2.8,
+    "windMean": 1.7,
+    "windGust": 2.7,
+    "windDir": 215.4,
+    "windGustMax24": 8.1
    },
    "stationCandidates": [
     "DIA2",
@@ -351,16 +428,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-23T16:00:00Z",
-    "validFrom": "2026-11-23T16:00:00Z",
-    "validTo": "2026-11-24T16:00:00Z",
-    "nextUpdate": "2026-11-24T16:00:00Z",
+    "publicationTime": "2026-11-24T16:00:00Z",
+    "validFrom": "2026-11-24T16:00:00Z",
+    "validTo": "2026-11-25T16:00:00Z",
+    "nextUpdate": "2026-11-25T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
       "level": 3,
       "value": "considerable",
-      "subdivision": "neutral",
+      "subdivision": "minus",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -375,46 +452,69 @@
        "NE",
        "E",
        "SE",
-       "S",
-       "SW",
        "W",
        "NW"
       ],
       "lower": 2000,
       "upper": null,
       "period": "all_day",
-      "comment": "Large quantities of fresh snow and the wind-drifted snow of the last two days are in some cases prone to triggering. Single winter sport participants can release avalanches. In particular on north and east facing slopes these can in isolated cases reach large size. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "As a consequence of southerly wind, avalanche prone wind slabs will form. Single winter sport participants can release avalanches in some places. They can be released in the new snow and wind slab layers. Mostly avalanches are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+     },
+     {
+      "type": "wind_slab",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "W",
+       "NW"
+      ],
+      "lower": 2000,
+      "upper": null,
+      "period": "all_day",
+      "comment": "As a consequence of southerly wind, avalanche prone wind slabs will form. Single winter sport participants can release avalanches in some places. They can be released in the new snow and wind slab layers. Mostly avalanches are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      },
      {
       "type": "gliding_snow",
       "level": 2,
-      "aspects": [],
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
       "lower": null,
       "upper": null,
       "period": "all_day",
       "comment": "On grassy slopes numerous small and, in isolated cases, medium-sized gliding avalanches are to be expected. Caution is to be exercised in areas with glide cracks."
      }
     ],
-    "snowpack": "Weak layers prone to triggering are found especially in the layers of new and wind-drifted snow from the last few days. These will stabilize rapidly. Distinct, faceted weak layers are scarcely present.",
+    "snowpack": "The snow depths are above average for the time of year. Weak layers prone to triggering exist mainly in the new and wind-drifted snow layers of the last few days. These are stabilizing rapidly. Pronounced, faceted weak layers are scarcely present.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nThe danger of dry avalanches will decrease. However, persons can release avalanches as before. Careful route selection is required.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
+    "tendency": "Dry avalanches\nThe danger of dry avalanches will gradually decrease. However, persons can release avalanches as before. Careful route selection is required.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
    },
    "station": {
     "code": "CHA2",
     "name": "Pierres Fendues",
     "elevation": 2218,
     "distanceKm": 5.3,
-    "measuredAt": "2026-11-24T05:30:00Z",
+    "measuredAt": "2026-11-24T17:30:00Z",
     "historyHours": 24,
-    "snowDepth": 114.4,
+    "snowDepth": 104.4,
     "newSnow24": 76.7,
-    "depthChange24": 6.8,
+    "depthChange24": -10,
     "depthChange72": null,
-    "airTemp": -7.6,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": 2.5,
+    "windMean": 2.5,
+    "windGust": 4.4,
+    "windDir": 258,
+    "windGustMax24": 7.1
    },
    "stationCandidates": [
     "CHA2",
@@ -431,16 +531,16 @@
     "matchedBy": "map"
    },
    "bulletin": {
-    "publicationTime": "2026-11-23T16:00:00Z",
-    "validFrom": "2026-11-23T16:00:00Z",
-    "validTo": "2026-11-24T16:00:00Z",
-    "nextUpdate": "2026-11-24T16:00:00Z",
+    "publicationTime": "2026-11-24T16:00:00Z",
+    "validFrom": "2026-11-24T16:00:00Z",
+    "validTo": "2026-11-25T16:00:00Z",
+    "nextUpdate": "2026-11-25T16:00:00Z",
     "highlights": "",
     "dangerRatings": [
      {
       "level": 3,
       "value": "considerable",
-      "subdivision": "neutral",
+      "subdivision": "minus",
       "lower": null,
       "upper": null,
       "period": "all_day"
@@ -463,11 +563,29 @@
       "lower": 2200,
       "upper": null,
       "period": "all_day",
-      "comment": "Large quantities of fresh snow and the wind-drifted snow of the last two days are in some cases prone to triggering. Single winter sport participants can release avalanches, including large ones. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
+     },
+     {
+      "type": "wind_slab",
+      "level": 3,
+      "aspects": [
+       "N",
+       "NE",
+       "E",
+       "SE",
+       "S",
+       "SW",
+       "W",
+       "NW"
+      ],
+      "lower": 2200,
+      "upper": null,
+      "period": "all_day",
+      "comment": "The southerly wind will transport the new snow. Single winter sport participants can release avalanches in some places. Avalanches can be released in the new snow and wind slab layers. Mostly they are medium-sized. \n Backcountry touring calls for experience in the assessment of avalanche danger."
      },
      {
       "type": "gliding_snow",
-      "level": 2,
+      "level": 3,
       "aspects": [
        "E",
        "SE",
@@ -478,29 +596,29 @@
       "lower": null,
       "upper": 2400,
       "period": "all_day",
-      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided as far as possible."
+      "comment": "On steep grassy slopes numerous gliding avalanches are to be expected, even large ones. Areas with glide cracks are to be avoided."
      }
     ],
-    "snowpack": "Snow depths are well above average. Over a wide area there is two to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found mainly in the sometimes thick layers of new and wind-drifted snow from recent days. These will stabilize rapidly. \nAbove approximately 2600 m, on north- and east-facing slopes, there is still coarse-grained old snow in places at the snow base. This near-ground old snow is now overlain so thickly that fractures in near-ground layers of the snowpack are not very likely.",
+    "snowpack": "Snow depths are well above average. Over a wide area, there is twice to three times as much snow as is usual for the time of year. Weak layers prone to triggering are still found primarily in the sometimes thick new and wind-drifted snow layers of recent days. These are stabilizing rapidly.\nAbove approximately 2600 m, on north- and east-facing slopes, coarse-grained old snow is in some places still found at the snow base. This near-ground old snow has now been overlain by layers so thick that fractures in near-ground layers of the snowpack are not very likely.",
     "travelAdvisory": "",
-    "tendency": "Dry avalanches\nThe danger of dry avalanches will gradually decrease. Single winter sport participants can release avalanches as before. Backcountry touring calls for experience in the assessment of avalanche danger.\nWet-snow avalanches\nGliding avalanches are possible at any time. Areas with glide cracks are to be avoided as far as possible."
+    "tendency": "Wet-snow avalanches\nGliding avalanches can be released at any time of day or night. They can reach large size. Areas with glide cracks are to be avoided.\nDry avalanches\nThe danger of dry avalanches will gradually decrease. However, persons can release avalanches as before. Careful route selection is required."
    },
    "station": {
     "code": "ILI2",
     "name": "Les Collines",
     "elevation": 2022,
     "distanceKm": 2.4,
-    "measuredAt": "2026-11-24T05:30:00Z",
-    "historyHours": 24,
-    "snowDepth": 74.1,
+    "measuredAt": "2026-11-24T17:00:00Z",
+    "historyHours": 23,
+    "snowDepth": 68.7,
     "newSnow24": 39.3,
-    "depthChange24": -0.6,
+    "depthChange24": -6.5,
     "depthChange72": null,
-    "airTemp": -5.6,
-    "windMean": null,
-    "windGust": null,
-    "windDir": null,
-    "windGustMax24": null
+    "airTemp": 2,
+    "windMean": 0.2,
+    "windGust": 1,
+    "windDir": 318.9,
+    "windGustMax24": 13
    },
    "stationCandidates": [
     "ILI2",
